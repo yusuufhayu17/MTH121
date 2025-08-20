@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HAYUx CBT Practice Quiz</title>
   <link rel="stylesheet" href="style.css">
+  <!-- KaTeX for math rendering -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+  <
+  
 </head>
 <body>
   <!-- Marquee Banner -->
@@ -26,7 +31,7 @@
   <!-- Quiz Header -->
   <div class="quiz-header">
     <h1>HAYUx CBT Practice Quiz</h1>
-    <div class="subheader">MTH121: ELEMENTRY ALGEBRA II/div>
+    <div class="subheader">MTH222: Numerical Methods</div>
   </div>
 
   <div id="app" style="display: none;">
@@ -93,12 +98,18 @@
 
   <!-- Custom confirmation dialog -->
   <div id="customConfirm">
-    <p>Are you sure you want to submit the quiz? You still have time remaining.</p>
     <div>
-      <button id="confirmYes">Yes, Submit</button>
-      <button id="confirmNo">No, Continue</button>
+      <p>Are you sure you want to submit the quiz? You still have time remaining.</p>
+      <div>
+        <button id="confirmYes">Yes, Submit</button>
+        <button id="confirmNo">No, Continue</button>
+      </div>
     </div>
   </div>
+
+  <!-- Dark Mode Toggle -->
+  <button class="dark-mode-toggle" id="dark-mode-toggle">🌙 Dark Mode</button>
+
 
   <script src="script.js"></script>
 </body>

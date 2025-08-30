@@ -1,4 +1,667 @@
 const questions = [
+
+  {
+    "question": "The vector equation of a line passing through a point with position vector a and parallel to vector b is:",
+    "options": ["r = a + tb", "r = b + ta", "r · b = q", "(r - a) × b = 0"],
+    "answer": 0
+  },
+  {
+    "question": "The shortest distance between the skew lines r = a₁ + tb₁ and r = a₂ + sb₂ is given by:",
+    "options": ["|(a₂ - a₁) · (b₁ × b₂)| / |b₁ × b₂|", "|(a₂ - a₁) × (b₁ × b₂)| / |b₁ × b₂|", "|(a₂ - a₁) · (b₁ × b₂)|", "|a₂ - a₁| / |b₁ × b₂|"],
+    "answer": 0
+  },
+  {
+    "question": "The condition for two lines r = a₁ + tb₁ and r = a₂ + sb₂ to be coplanar is:",
+    "options": ["(a₂ - a₁) · (b₁ × b₂) = 0", "(a₂ - a₁) × (b₁ × b₂) = 0", "b₁ · b₂ = 0", "a₁ · a₂ = 0"],
+    "answer": 0
+  },
+  {
+    "question": "The vector equation of a plane passing through a point with position vector a and parallel to vectors b and c is:",
+    "options": ["r = a + sb + tc", "r · (b × c) = a · (b × c)", "(r - a) · (b × c) = 0", "All of the above"],
+    "answer": 3
+  },
+  {
+    "question": "The Cartesian equation of a plane passing through (x₁, y₁, z₁) and perpendicular to a line with direction ratios (a, b, c) is:",
+    "options": ["a(x - x₁) + b(y - y₁) + c(z - z₁) = 0", "(x - x₁)/a = (y - y₁)/b = (z - z₁)/c", "ax + by + cz + d = 0", "a(x + x₁) + b(y + y₁) + c(z + z₁) = 0"],
+    "answer": 0
+  },
+  {
+    "question": "The distance from the point (x₁, y₁, z极) to the plane ax + by + cz + d = 0 is:",
+    "options": ["|ax₁ + by₁ + cz₁ + d| / √(a² + b² + c²)", "|ax₁ + by₁ + cz₁| / √(a² + b² + c²)", "|ax₁ + by₁ + cz₁ + d|", "(ax₁ + by₁ + cz₁ + d) / √(a² + b² + c²)"],
+    "answer": 0
+  },
+  {
+    "question": "The angle between two planes a₁x + b₁y + c₁z + d₁ = 0 and a₂x + b₂y + c₂z + d₂ = 0 is given by the angle between their:",
+    "options": ["Normal vectors", "Direction vectors", "Lines of intersection", "Points of contact"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the plane passing through the intersection of the planes P₁: a₁x+b₁y+c₁z+d₁=0 and P₂: a₂x+b₂y+c₂z+d₂=0 is:",
+    "options": ["P₁ + kP₂ = 0", "P₁ - kP₂ = 0", "kP₁ + P₂ = 0", "Any of the above"],
+    "answer": 0
+  },
+  {
+    "question": "The condition for the line (x - x₁)/l = (y - y₁)/m = (z - z₁)/n to be parallel to the plane ax + by + cz + d = 0 is:",
+    "options": ["al + bm + cn = 0", "(x₁, y₁, z₁) satisfies the plane equation", "l/m = a/b", "l = a, m = b, n = c"],
+    "answer": 0
+  },
+  {
+    "question": "The condition for the line (x - x₁)/l = (y - y₁)/m = (z - z₁)/n to lie in the plane ax + by + cz + d = 0 is:",
+    "options": ["al + bm + cn = 0 and ax₁ + by₁ + cz₁ + d = 0", "al + bm + cn ≠ 0", "(x₁, y₁, z₁) is the origin", "l = m = n"],
+    "answer": 0
+  },
+  {
+    "question": "The image of the point (x₁, y₁, z₁) in the plane ax + by + cz + d = 0 is given by:",
+    "options": ["(x - 2aλ, y - 2bλ, z - 2cλ) where λ = (ax₁+by₁+cz₁+d)/(a²+b²+c²)", "(x + 2aλ, y + 2bλ, z + 2cλ) where λ = (ax₁+by₁+cz₁+d)/(a²+b²+c²)", "(x₁ - aλ, y₁ - bλ, z₁ - cλ) where λ = (ax₁+by₁+cz₁+d)/(a²+b²+c²)", "(x₁ + aλ, y₁ + bλ, z₁ + cλ) where λ = (ax₁+by₁+cz₁+d)/(a²+b²+c²)"],
+    "answer": 0
+  },
+  {
+    "question": "The distance between the parallel planes ax + by + cz + d₁ = 0 and ax + by + cz + d₂ = 0 is:",
+    "options": ["|d₁ - d₂| / √(a² + b² + c²)", "|d₁ + d₂| / √(a² + b² + c²)", "|d₁ - d₂|", "(d极 - d₂) / √(a² + b² + c²)"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere with center (a, b, c) and radius r is:",
+    "options": ["(x - a)² + (y - b)² + (z - c)² = r²", "x² + y² + z² + 2ax + 2by + 2cz + d = 0", "ax + by + cz = r²", "(x + a)² + (y + b)² + (z + c)² = r²"],
+    "answer": 0
+  },
+  {
+    "question": "The general equation of a sphere is x² + y² + z² + 2ux + 2vy + 2wz + d = 0. Its center is:",
+    "options": ["(-u, -v, -w)", "(u, v, w)", "(-2u, -2v, -2w)", "(u/2, v/2, w/2)"],
+    "answer": 0
+  },
+  {
+    "question": "The radius of the sphere x² + y² + z² + 2ux + 2vy + 2wz + d = 0 is:",
+    "options": ["√(u² + v² + w² - d)", "√(u² + v² + w² + d)", "u² + v² + w² - d", "u² + v² + w² + d"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere with (x₁, y₁, z₁) and (x₂, y₂, z₂) as endpoints of a diameter is:",
+    "options": ["(x - x₁)(x - x₂) + (y - y₁)(y - y₂) + (z - z₁)(z - z₂) = 0", "(x - x₁)² + (y - y₁)² + (z - z₁)² = (x - x₂)² + (y - y₂)² + (z - z₂)²", "x² + y² + z² = x₁x₂ + y₁y₂ + z₁z₂", "(x - x₁)/(x₂ - x₁) = (y - y₁)/(y₂ - y₁) = (z - z₁)/(z₂ -极)"],
+    "answer": 0
+  },
+  {
+    "question": "The angle between two lines with direction cosines (l₁, m₁, n₁) and (l₂, m₂, n₂) is given by:",
+    "options": ["cosθ = l₁l₂ + m₁m₂ + n₁n₂", "sinθ = √[(m₁n₂ - m₂n极)² + (n₁l₂ - n₂l₁)² + (l₁m₂ - l₂m₁)²]", "tanθ = |(l₁l₂ + m₁m₂ + n₁n₂)| / √[(m₁n₂ - m₂n₁)² + (n₁l₂ - n₂l₁)² + (l₁m₂ - l₂m₁)²]", "Both a and b"],
+    "answer": 3
+  },
+  {
+    "question": "The direction ratios of the line of intersection of the planes a₁x+b₁y+c₁z+d₁=0 and a₂x+b₂y+c₂z+d₂=0 are proportional to:",
+    "options": ["(b₁c₂ - b₂c₁, c₁a₂ - c₂a₁, a₁b₂ - a₂b₁)", "(a₁a₂, b₁b₂, c₁c₂)", "(a₁ + a₂, b₁ + b₂, c₁ + c₂)", "(a₁ - a₂, b₁ - b₂, c₁ - c₂)"],
+    "answer": 0
+  },
+  {
+    "question": "The condition for the planes a₁x+b₁y+c₁z+d₁=0 and a₂x+b₂y+c₂z+d₂=0 to be perpendicular is:",
+    "options": ["a₁a₂ + b₁b₂ + c₁c₂ = 0", "a₁/a₂ = b₁/b₂ = c₁/c₂", "a₁a₂ = b₁b₂ = c₁c₂", "(a₁ + a₂)(b₁ + b₂)(c₁ + c₂) = 0"],
+    "answer": 0
+  },
+  {
+    "question": "The distance between the parallel lines (x - x₁)/l = (y - y₁)/m = (z - z₁)/n and (x - x₂)/l = (y - y₂)/m = (z - z₂)/n is:",
+    "options": ["|(AB × b)| / |b| where A=(x₁,y₁,z₁), B=(x₂,y₂,z₂), b=(l,m,n)", "|AB · b| / |b|", "|AB|", "|AB| / |b|"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the plane containing the line (x - x₁)/l = (y - y₁)/m = (z - z₁)/n and parallel to another line with direction ratios (l₂, m₂, n₂) is:",
+    "options": ["|x - x₁ y - y₁ z - z₁| |l m n | = 0 |l₂ m₂ n₂ |", "l(x - x₁) + m(y - y₁) + n(z - z₁) = 0", "l₂(x - x₁) + m₂(y - y₁) + n₂(z - z₁) = 0", "(x - x₁)/l = (y - y₁)/m = (z - z₁)/n"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the plane through the point (x₁, y₁, z₁) and perpendicular to the planes a₁x+b₁y+c₁z+d₁=0 and a₂x+b₂y+c₂z+d₂=0 is:",
+    "options": ["|x - x₁ y - y₁ z - z₁| |a₁ b₁ c₁ | = 0 |a₂ b₂ c₂ |", "a₁(x - x₁) + b₁(y - y₁) + c₁(z - z₁) = 0", "a₂(x - x₁) + b₂(y - y₁) + c₂(z - z₁) = 0", "(a₁ + a₂)(x - x₁) + (b₁ + b₂)(y - y₁) + (c₁ + c₂)(z - z₁) = 0"],
+    "answer": 0
+  },
+  {
+    "question": "The condition for the four points (x₁,y₁,z₁), (x₂,y₂,z₂), (x₃,y₃,z₃), (x₄,y₄,z₄) to be coplanar is that the volume of the tetrahedron formed by them is zero, which is given by the determinant:",
+    "options": ["|x₁ y₁ z₁ 1| |x₂ y₂ z₂ 1| |x₃ y₃ z₃ 1| |x₄ y₄ z₄ 1| = 0", "|x₁ y₁ z₁| |x₂ y₂ z₂| |x₃ y₃ z₃| = 0", "|x₁ - x₄, y₁ - y₄, z₁ - z₄| |x₂ - x₄, y₂ -极₄, z₂ - z₄| |x₃ - x₄, y₃ - y₄, z₃ - z₄| = 0", "All of the above"],
+    "answer": 3
+  },
+  {
+    "question": "The equation of the sphere passing through the circle x²+y²+z²+2ux+2vy+2wz+d=0, lx+my+nz=p is:",
+    "options": ["x²+y²+z²+2ux+2vy+2wz+d + λ(lx+my+nz-p)=0", "x²+y²+z²+2ux+2vy+2wz+d = λ(lx+my+nz-p)", "(x²+y²+z²+2ux+2vy+2wz+d)(lx+my+nz-p)=0", "x²+y²+z²+2ux+2vy+2wz+d + λ = lx+my+nz-p"],
+    "answer": 0
+  },
+  {
+    "question": "The angle between the line (x - x₁)/l = (y - y₁)/m = (z - z₁)/n and the plane ax + by + cz + d = 0 is given by:",
+    "options": ["sinφ = |al + bm + cn| / √(a²+b²+c²)√(l²+m²+n²)", "cosφ = |al + bm + cn| / √(a²+b²+c²)√(l²+m²+n²)", "tanφ = √(a²+b²+c²)√(l²+m²+n²) / |al + bm + cn|", "cotφ = |al + bm + cn| / √(a²+b²+c²)√(l²+m²+n²)"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the tangent plane to the sphere x²+y²+z²+2ux+2vy+2wz+d=0 at the point (x₁,y₁,z₁) is:",
+    "options": ["xx₁ + yy₁ + zz₁ + u(x+x₁) + v(y+y₁) + w(z+z₁) + d = 0", "xx₁ + yy₁ + zz₁ + u(x - x₁) + v(y - y₁) + w(z - z₁) + d = 0", "x² + y² + z² + 2ux + 2vy + 2wz + d = xx₁ + yy₁ + zz₁", "(x - x₁)² + (y - y₁)² + (z - z₁)² = r²"],
+    "answer": 0
+  },
+  {
+    "question": "The condition for the plane lx + my + nz = p to touch the sphere x²+y²+z²+2ux+2vy+2wz+d=极 is that the perpendicular distance from the center to the plane equals the radius, i.e.:",
+    "options": ["|(-u)l + (-v)m + (-w)n - p| / √(l²+m²+n²) = √(u²+v²+w² - d)", "|ul + vm + wn + p| / √(l²+m²+n²) = √(u²+v²+w² - d)", "|ul + vm + wn - p| / √(l²+m²+n²) = √(u²+v²+w² + d)", "|(-u)l + (-v)m + (-w)n + p| / √(l²+m²+n²) = √(u²+v²+w² + d)"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere with center on the line x/1 = y/2 = z/3 and passing through the points (0,0,0) and (1,0,0) is:",
+    "options": ["x² + y² + z² - x = 0", "x² + y² + z² - y = 0", "x² + y² + z² - z = 0", "x² + y² + z² - x - y - z = 0"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere concentric with x²+y²+z²-4x-6y-8z-4=0 and passing through (1,1,1) is:",
+    "options": ["x²+y²+z²-4x-6y-8z+6=0", "x²+y²+z²-4x-6y-8z-6=0", "x²+y²+z²-4x-6y-8z+4=0", "x²+y²+z²-4x-6y-8z-4=0"],
+    "answer": 0
+  },
+  {
+    "question": "The locus of a point which moves such that the ratio of its distances from two fixed points is constant is a:",
+    "options": ["Circle", "Plane", "Sphere", "None of these"],
+    "answer": 2
+  },
+  {
+    "question": "The equation of the sphere having the circle x²+y²+z²=9, x+y+z=1 as a great circle is:",
+    "options": ["x²+y²+z² - 9 + λ(x+y+z-1)=0", "x²+y²+z² - 9 = λ(x+y+z-1)", "(x²+y²+z²-9)(x+y+z-1)=0", "x²+y²+z² + λ(x+y+z-1)=9"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere passing through the points (0,0,0), (1,0,0), (0,1,0), (0,0,1) is:",
+    "options": ["x²+y²+z² - x - y - z = 0", "x²+y²+z² + x + y + z = 0", "x²+y²+z² - xy - yz - zx = 0", "x²+y²+z² + xy + yz + zx = 0"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere with center (1,2,3) and touching the plane 2x+3y+4z=5 is:",
+    "options": ["(x-1)²+(y-2)²+(z-3)² = |2(1)+3(2)+4(3)-5|² / (2²+3²+4²)", "(x-1)²+(y-2)²+(z-3)² = |2(1)+3(2)+4(3)-5| / √(2²+3²+4²)", "(x-1)²+(y-2)²+(z-3)² = [2(1)+3(2)+4(3)-5]² / (2²+3²+4²)", "(x-1)²+(y-2)²+(z-3)² = [2(1)+3(2)+4(3)-5] / (2²+3²+4²)"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere through the circle x²+y²+z²=1, x+y+z=1 and the point (1,1,1) is:",
+    "options": ["x²+y²+z² - 1 + λ(x+y+z-1)=0 with λ determined by (1,1,1)", "x²+y²+z² - 1 = λ(x+y+z-1)", "(x²+y²+z²-1)(x+y+z-1)=0", "x²+y²+z² + λ(x+y+z-1)=1"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere with center on the plane x+y+z=3 and passing through the points (1,0,0), (0,1,0), (0,0,1) is:",
+    "options": ["x²+y²+z² - x - y - z = 0", "x²+y²+z² - 2x - 2y - 2z + 2 = 0", "x²+y²+z² - 4x - 4y - 4z + 4 = 0", "x²+y²+z² - x - y - z + 1 = 0"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere with center (2,3,4) and touching the x-axis is:",
+    "options": ["(x-2)²+(y-3)²+(z-4)² = 3²+4²", "(x-2)²+(y-3)²+(z-4)² = 2²", "(x-2)²+(y-3)²+(z-4)² = 4²", "(x-2)²+(y-3)²+(z-4)² = 5²"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere with center on the z-axis and passing through the points (a,0,0), (0,b,0), (0,0,c) is:",
+    "options": ["x²+y²+z² - 2λz + (a²+b²+c²)/2 = 0", "x²+y²+z极 - 2λz = 0", "x²+y²+z² - 2λz + λ² = a²+b²+c²", "x²+y²+z² - 2λ极 + λ² - (a²+b²+c²)/2 = 0"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere passing through (1,1,1) and (2,2,2) and having the smallest possible radius is:",
+    "options": ["x²+y²+z² - 3x - 3y - 3z + 6 = 0", "x²+y²+z² - 3x - 3y - 3z + 3 = 0", "x²+y²+z² - x - y - z = 0", "x²+y²+z² - 2x - 2y - 2z + 2 = 0"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere with center (1,2,3) and cutting the plane x+y+z=1 in a circle of radius 2 is:",
+    "options": ["(x-1)²+(y-2)²+(z-3)² = 4 + [|1+2+3-1|/√3]²", "(x-1)²+(y-2)²+(z-3)² = 4 + [|1+2+3-1|/√3]", "(x-1)²+(y-2)²+(z-3)² = 2 + [|1+2+3-1|/√3]²", "(x-1)²+(y-2)²+(z-3)² = 2 + [|1+2+3-1|/√3]"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere with center (1,1,1) and touching the sphere x²+y²+z²-2x-4y-6z+10=0 externally is:",
+    "options": ["(x-1)²+(y-1)²+(z-1)² = [√(1+1+1-10) - 1]²", "(x-1)²+(y-1)²+(z-1)² = [√(1+4+9-10) - 1]²", "(x-1)²+(y-1)²+(z-1)² = [√(1+1+1-10) + 1]²", "(x-1)²+(y-1)²+(z-1)² = [√(1+4+9-10) + 1]²"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere through the points (0,0,0), (a,0,0), (0,b,0), (0,0,c) is:",
+    "options": ["x²+y²+z² - ax - by - cz = 0", "x²+y²+z² + ax + by + cz = 极", "x²+y²+z² - (a+b+c)(x+y+z) = 0", "x²+y²+z² + (a+b+c)(x+y+z) = 0"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere with center (1,2,3) and touching the line (x-0)/1 = (y-0)/1 = (z-0)/1 is:",
+    "options": ["(x-1)²+(y-2)²+(z-3)² = [|(1×1+2×1+3×1)|/√3]²", "(x-1)²+(y-2)²+(z-3)² = [|(1×1+2×1+3×1 - 0)|/√3]²", "(x-1)²+(y-2)²+(z-3)² = [distance from (1,2,3) to line]²", "(x-1)²+(y-2)²+(z-3)² = [|(1-0)×1 + (2-0)×1 + (3-0)×1|/√3]²"],
+    "answer": 2
+  },
+  {
+    "question": "The equation of the sphere with center on the line x/1 = y/2 = z/3 and radius √14 which touches the plane x+y+z=3 is:",
+    "options": ["(x-1)²+(y-2)²+(z-3)² = 14", "(x-2)²+(y-4)²+(z-6)² = 14", "(x-1)²+(y-2)²+(z-3)² = 14 and (x+1)²+(y+2)²+(z+3)² = 14", "(x-2)²+(y-4)²+(z-6)² = 14 and (x+2)²+(y+4)²+(z+6)² = 14"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere passing through the points (1,0,0), (0,1,0), (0,0,1) and having the smallest possible radius is:",
+    "options": ["x²+y²+z² - x - y - z = 0", "x²+y²+z² - x - y - z + 1/2 = 0", "x²+y²+z² - x - y - z + 1/4 = 0", "x²+y²+z² - x - y - z + 1 = 0"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere with center (1,1,1) and intersecting the sphere x²+y²+z²+2x+4y+6z+10=0 orthogonally is:",
+    "options": ["(x-1)²+(y-1)²+(z-1)² = 3 + 2(1)(-1) + 2(1)(-2) + 2(1)(-3) - 10", "(x-1)²+(y-1)²+(z-1)² = 3 - 2(1)(1) - 2(1)(2) - 2(1)(3) + 10", "(x-1)²+(y-1)²+(z-1)² = 3 + 2(1)(1) + 2(1)(2) + 2(1)(3) - 10", "(x-1)²+(y-1)²+(z-1)² = 3 - 2(1)(-1) - 2(1)(-2) - 2(1)(-3) + 10"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere through the circle x²+y²+z²=4, x+y+z=1 and with center on the plane x+y+z=0 is:",
+    "options": ["x²+y²+z² - 4 + λ(x+y+z-1)=0 with center (-λ/2, -λ/2, -λ/2) satisfying -λ/2 -λ/2 -λ/2=0", "x²+y²+z² - 4 = λ(x+y+z-1)", "(x²+y²+z²-4)(x+y+z-1)=0", "x²+y²+z² + λ(x+y+z-1)=4"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere with center (2,3,4) and touching the sphere x²+y²+z²-4x-6y-8z+4=0 internally is:",
+    "options": ["(x-2)²+(y-3)²+(z-4)² = [√(4+9+16-4) - √(4+9+16)]²", "(x-2)²+(y-3)²+(z-4)² = [√(4+9+16-4) + √(4+9+16)]²", "(x-2)²+(y-3)²+(z-4)² = [√(4+9+16) - √(4+9+16-4)]²", "(x-2)²+(y-3)²+(z-4)² = [√(4+9+16) + √(4+9+16-4)]²"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere with center on the line x=2y=3z and passing through the points (0,0,0) and (1,1,1) is:",
+    "options": ["x²+y²+z² - (6/7)(x+2y+3z)=0", "x²+y²+z² - (6/7)(x+2y+3z)=1", "x²+y²+z² - (7/6)(x+2y+3z)=0", "x²+y²+z² - (7/6)(x+2y+3z)=1"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere through the points (0,0,0), (1,1,0), (1,0,1), (0,1,1) is:",
+    "options": ["x²+y²+z² - x - y - z = 0", "x²+y²+z² - x - y - z + 1 = 0", "x²+y²+z² - xy - yz - zx = 0", "x²+y²+z² + xy + y极 + zx = 0"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere with center (1,2,3) and cutting the sphere x²+y²+z²=14 orthogonally is:",
+    "options": ["(x-1)²+(y-2)²+(z-3)² = 14 - 2(1×0+2×0+3×0) + 0", "(x-1)²+(y-2)²+(z-3)² = 14 - 2(1×0+2×0+3×0) - 0", "(x-1)²+(y-2)²+(z-3)² = 14 + 2(1×0+2×0+3×0) + 0", "(x-1)²+(y-2)²+(z-3)² = 14 + 2(1×0+2×0+3×0) - 0"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere through the circle x²+y²+z²+2x+4y+6z+11=0, x+y+z+3=0 and the point (1,1,1) is:",
+    "options": ["x²+y²+z²+2x+4y+6z+11 + λ(x+y+z+3)=0 with λ from (1,1,1)", "x²+y²+z²+2x+4y+6z+11 = λ(x+y+z+3)", "(x²+y²+z²+2x+4y+6z+11)(x+y+z+3)=0", "x²+y²+z²+2x+4y+6z+11 + λ = x+y+z+3"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere with center (1,1,1) and radius equal to the distance from (1,1,1) to the line (x-0)/1 = (y-0)/1 = (z-0)/1 is:",
+    "options": ["(x-1)²+(y-1)²+(z-1)² = [|(1×1+1×1+1×1)|/√3]²", "(x-1)²+(y-1)²+(z-1)² = [|(1×1+1×1+1×1 - 0)|/√3]²", "(x-1)²+(极-1)²+(z-1)² = [distance from (1,1,1) to line]²", "(x-1)²+(y-1)²+(z-1)² = [|(1-0)×1 + (1-0)×1 + (1-0)×1|/√3]²"],
+    "answer": 2
+  },
+  {
+    "question": "The equation of the sphere with center on the plane x=0 and passing through the points (1,1,1), (1,-1,1), (1,1,-1) is:",
+    "options": ["x²+y²+z² - 2x = 0", "x²+y²+z² + 2x = 0", "x²+y²+z² - 2y = 0", "x²+y²+z² - 2z = 0"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere through the points (0,0,0), (1,1,0), (1,0,1), (0,1,1) and having the smallest possible radius is:",
+    "options": ["x²+y²+z² - x - y - z = 0", "x²+y²+z² - x - y - z + 1/2 = 0", "x²+y²+z² - x - y - z + 1/4 = 0", "x²+y²+z² - x - y - z + 1 = 0"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere with center (1,2,3) and touching the sphere x²+y²+z²-2x-4y-6z+10=0 externally is:",
+    "options": ["(x-1)²+(y-2)²+(z-3)² = [√(1+4+9-10) - √(1+4+9)]²", "(x-1)²+(y-2)²+(z-3)² = [√(1+4+9-10) + √(1+4+9)]²", "(x-1)²+(y-2)²+(z-3)² = [√(1+4+9) - √(1+4+9-10)]²", "(x-1)²+(y-2)²+(z-3)² = [√(1+4+9) + √(1+4+9-10)]²"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere through the circle x²+y²+z²=9, x+y+z=1 and with center on the line x/1 = y/2 = z/3 is:",
+    "options": ["x²+y²+z²-9 + λ(x+y+z-1)=0 with center (-λ/2, -λ/2, -λ/2) satisfying (-λ/2)/1 = (-λ/2)/2 = (-λ/2)/3", "x²+y²+z²-9 = λ(x+y+z-1)", "(x²+y²+z²-9)(x+y+z-1)=0", "x²+y²+z² + λ(x+y+z-1)=9"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere with center (1,1,1) and cutting the plane x+y+z=1 in a circle of radius 1 is:",
+    "options": ["(x-1)²+(y-1)²+(z-1)² = 极 + [|1+1+1-1|/√3]²", "(x-1)²+(y-1)²+(z-1)² = 1 + [|1+1+1-1|/√3]", "(x-1)²+(y-1)²+(z-1)² = 1 + [|1+1+1-1|/3]", "(x-1)²+(y-1)²+(z-1)² = 1 + [|1+1+1-1|/3]²"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere through the points (0,0,0), (a,0,0), (0,b,0), (0,0,c) and having the smallest possible radius is:",
+    "options": ["x²+y²+z² - (a+b+c)(x+y+z)/3 = 0", "x²+y²+z² - (a+b+c)(x+y+z)/2 = 0", "x²+y²+z² - (a+b+c)(x+y+z) = 0", "x²+y²+z² - (a²+b²+c²)(x+y+z)/(a+b+c) = 0"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere with center on the line x=1, y=2 and passing through the points (0,0,0), (1,1,1) is:",
+    "options": ["(x-1)²+(y-2)²+(z-3)² = 14", "(x-1)²+(y-2)²+(z-0)² = 5", "(x-1)²+(y-2)²+(z-1)² = 6", "(x-1)²+(y-2)²+(z-2)² = 9"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere through the circle x²+y²+z²+2x+4y+6z+11=0, x+y+z+3=0 and with center on the plane x=0 is:",
+    "options": ["x²+y²+z²+2x+4y+6z+11 + λ(x+y+z+3)=0 with center (-1-λ/2, -2-λ/2, -3-λ/2) satisfying -1-λ/2=0", "x²+y²+z²+2x+4y+6z+11 = λ(x+y+z+3)", "(x²+y²+z²+2x+4y+6z+11)(x+y+z+3)=0", "x²+y²+z²+2x+4y+6z+11 + λ = x+y+z+3"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere with center (1,2,3) and touching the sphere x²+y²+z²-2x-4y-6z+10=0 internally is:",
+    "options": ["(x-1)²+(y-2)²+(z-3)² = [√(1+4+9-10) - √(1+4+9)]²", "(x-1)²+(y-2)²+(z-3)² = [√(1+4+9-10) + √(1+4+9)]²", "(x-1)²+(y-2)²+(z-3)² = [√(1+4+9) - √(1+4+9-10)]²", "(x-1)²+(y-2)²+(z-3)² = [√(1+4+9) + √(1+4+9-10)]²"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere through the points (0,0,0), (1,0,0), (0,1,0), (0,0,1) and having the largest possible radius is:",
+    "options": ["x²+y²+z² - x - y - z = 0", "x²+y²+z² - x - y - z + 1/2 = 0", "x²+y²+z² - x - y - z + 1/4 = 0", "x²+y²+z² - x - y - z + 1 = 0"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere with center (1,1,1) and cutting the sphere x²+y²+z²=3 orthogonally is:",
+    "options": ["(x-1)²+(y-1)²+(z-1)² = 3 - 2(1×0+1×0+1×0) + 0", "(x-1)²+(y-1)²+(z-1)² = 3 - 2(1×0+1×0+1×0) - 0", "(x-1)²+(y-1)²+(z-1)² = 3 + 2(1×0+1×0+1×0) + 0", "(x-1)²+(y-1)²+(z-1)² = 3 + 2(1×0+1×0+1×0) - 0"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere through the circle x²+y²+z²=4, x+y+z=1 and with center on the line x/1 = y/1 = z/1 is:",
+    "options": ["x²+y²+z²-4 + λ(x+y+z-1)=0 with center (-λ/2, -λ/2, -λ/2) satisfying -λ/2 = -λ/2 = -λ/2", "x²+y²+z²-4 = λ(x+y+z-1)", "(x²+y²+z²-4)(x+y+z-1)=0", "x²+y²+z² + λ(x+y+z-1)=4"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere with center (2,3,4) and touching the sphere x²+y²+z²-4x-6y-8z+4=0 externally is:",
+    "options": ["(x-2)²+(y-3)²+(z-4)² = [√(4+9+16-4) - √(4+9+16)]²", "(x-2)²+(y-3)²+(z-4)² = [√(4+9+16-4) + √(4+9+16)]²", "(x-2)²+(y-3)²+(z-4)² = [√(4+9+16) - √(4+9+16-4)]²", "(x-2)²+(y-3)²+(z-4)² = [√(4+9+16) + √(4极9+16-4)]²"],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the sphere through the points (0,0,0), (1,1,0), (1,0,1), (0,1,1) and having the largest possible radius is:",
+    "options": ["x²+y²+z² - x - y - z = 0", "x²+y²+z² - x - y - z + 1/2 = 0", "x²+y²+z² - x - y - z + 1/4 = 0", "x²+y²+z² - x - y - z + 1 = 0"],
+    "answer": 0
+  },
+
+{
+"question": "The vector equation of a line passing through a point with position vector a and parallel to vector b is:",
+"options": ["r = a + tb", "r = b + ta", "r · b = q", "(r - a) × b = 0"],
+"answer": 0
+},
+{
+"question": "The shortest distance between the skew lines r = a₁ + tb₁ and r = a₂ + sb₂ is given by:",
+"options": ["|(a₂ - a₁) · (b₁ × b₂)| / |b₁ × b₂|", "|(a₂ - a极) × (b₁ × b₂)| / |b₁ × b₂|", "|(a₂ - a₁) · (b₁ × b₂)|", "|a₂ - a₁| / |b₁ × b₂|"],
+"answer": 0
+},
+{
+"question": "The condition for two lines r = a₁ + tb₁ and r = a₂ + sb₂ to be coplanar is:",
+"options": ["(a₂ - a₁) · (b₁ × b₂) = 0", "(a₂ - a₁) × (b₁ × b₂) = 0", "b₁ · b₂ = 0", "a₁ · a₂ = 0"],
+"answer": 0
+},
+{
+"question": "The vector equation of a plane passing through a point with position vector a and parallel to vectors b and c is:",
+"options": ["r = a + sb + tc", "r · (b × c) = a · (b × c)", "(r - a) · (b × c) = 0", "All of the above"],
+"answer": 3
+},
+{
+"question": "The Cartesian equation of a plane passing through (x₁, y₁, z₁) and perpendicular to a line with direction ratios (a, b, c) is:",
+"options": ["a(x - x₁) + b(y - y₁) + c(z - z₁) = 0", "(x - x₁)/a = (y - y₁)/b = (z - z₁)/极", "ax + by + cz + d = 0", "a(x + x₁) + b(y + y₁) + c(z + z₁) = 0"],
+"answer": 0
+},
+{
+"question": "The distance from the point (x₁, y₁, z₁) to the plane ax + by + cz + d = 0 is:",
+"options": ["|ax₁ + by₁ + cz₁ + d| / √(a² + b² + c²)", "|ax₁ + by₁ + cz₁| / √(a² + b² + c²)", "|ax₁ + by₁ + cz₁ + d|", "(ax₁ + by₁ + cz₁ +极) / √(a² + b² + c²)"],
+"answer": 0
+},
+{
+"question": "The angle between two planes a₁x + b₁y + c₁z + d₁ = 0 and a₂x + b₂y + c₂z + d₂ = 0 is given by the angle between their:",
+"options": ["Normal vectors", "Direction vectors", "Lines of intersection", "Points of contact"],
+"answer": 0
+},
+{
+"question": "The equation of the plane passing through the intersection of the planes P₁: a₁x+b₁y+c₁z+d₁=极 and P₂: a₂x+b₂y+c₂z+d₂=0 is:",
+"options": ["P₁ + kP₂ = 0", "P₁ - k极₂ = 0", "kP₁ + P₂ = 0", "Any of the above"],
+"answer": 0
+},
+{
+"question": "The condition for the line (x - x₁)/l = (y - y₁)/m = (z - z₁)/n to be parallel to the plane ax + by + cz + d = 0 is:",
+"options": ["al + bm + cn = 0", "(x₁, y₁, z₁) satisfies the plane equation", "l/m = a/b", "l = a, m = b, n = c"],
+"answer": 0
+},
+{
+"question": "The condition for the line (x - x₁)/l = (y - y₁)/m = (z - z₁)/n to lie in the plane ax + by + cz + d = 0 is:",
+"options": ["al + bm + cn = 0 and ax₁ + by₁ + cz₁ + d = 0", "al + bm + cn ≠ 0", "(x₁, y₁, z₁) is the origin", "l = m = n"],
+"answer": 0
+},
+{
+"question": "The image of the point (x₁, y₁, z₁) in the plane ax + by + cz + d = 0 is given by:",
+"options": ["(x - 2aλ, y - 2bλ, z - 2cλ) where λ = (ax₁+by₁+cz₁+d)/(a²+b²+c²)", "(x + 2aλ, y + 2bλ, z + 2cλ) where λ = (ax₁+by₁+cz₁+d)/(a²+b²+c²)", "(x₁ - aλ, y₁ - bλ, z₁ - cλ) where λ = (ax₁+by₁+cz₁+d)/(a²+b²+c²)", "(x₁ + aλ, y₁ + bλ, z₁ + cλ) where λ = (ax₁+by₁+cz₁+d)/(a²+b²+c²)"],
+"answer": 0
+},
+{
+"question": "The distance between the parallel planes ax + by + cz + d₁ = 0 and ax + by + cz + d₂ = 0 is:",
+"极options": ["|d₁ - d₂| / √(a² + b² + c²)", "|d₁ + d₂| / √(a² + b² + c²)", "|d极 - d₂|", "(d₁ - d₂) / √(a² + b² + c²)"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere with center (a, b, c) and radius r is:",
+"options": ["(x - a)² + (y - b)² + (z - c)² = r²", "x² + y² + z² + 2ax + 2by + 2cz + d = 0", "ax + by + cz = r²", "(x + a)² + (y + b)² + (z + c)² = r²"],
+"answer": 0
+},
+{
+"question": "The general equation of a sphere is x² + y² + z² + 2ux + 2vy + 2w极 + d = 0. Its center is:",
+"options": ["(-u, -v, -w)", "(u, v, w)", "(-2u, -2v, -2w)", "(u/2, v/2, w/2)"],
+"answer": 0
+},
+{
+"question": "The radius of the sphere x² + y² + z² + 2ux + 2vy + 2wz + d = 0 is:",
+"options": ["√(u² + v² + w² - d)", "√(u² + v² + w² + d)", "u² + v² + w² - d", "u² + v² + w² + d"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere with (x₁, y₁, z₁) and (x₂, y₂, z₂) as endpoints of a diameter is:",
+"options": ["(x - x₁)(x - x₂) + (y - y₁)(y - y₂) + (z - z₁)(z - z₂) = 0", "(x - x₁)² + (y - y₁)² + (z - z₁)² = (极 - x₂)² + (y - y₂)² + (z - z₂)²", "x² + y² + z² = x₁x₂ + y₁y₂ + z₁z₂", "(x - x₁)/(x₂ - x₁) = (y - y极)/(y₂ - y₁) = (z - z₁)/(z₂ - z₁)"],
+"answer": 0
+},
+{
+"question": "The angle between two lines with direction cosines (l₁, m₁, n₁) and (l₂, m₂, n₂) is given by:",
+"options": ["cosθ = l₁l₂ + m₁m₂ + n₁n₂", "sinθ = √[(m₁n₂ - m₂n₁)² + (n₁l₂ - n₂l₁)² + (l₁m₂ - l₂m₁)²]", "tanθ = |(l₁l₂ + m₁m₂ + n₁n₂)| / √[(m₁n₂ - m₂n₁)² + (n₁l₂ - n₂l₁)² + (l₁m₂ - l₂m₁)²]", "Both a and b"],
+"answer": 3
+},
+{
+"question": "The direction ratios of the line of intersection of the planes a₁x+b₁y+c₁z+d₁=0 and a₂x+b₂y+c₂z+d₂=0 are proportional to:",
+"options": ["(b₁c₂ - b₂c₁, c₁a₂ - c₂a₁, a₁b₂ - a₂b₁)", "(a₁a₂, b₁b₂, c₁c₂)", "(a₁ + a₂, b₁ + b₂, c₁ + c₂)", "(a₁ - a₂, b₁ - b₂, c₁ - c₂)"],
+"answer": 0
+},
+{
+"question": "The condition for the planes a₁x+b₁y+c₁z+d₁=0 and a₂x+b₂y+c₂z+d₂=0 to be perpendicular is:",
+"options": ["a₁a₂ + b₁b₂ + c₁c₂ = 0", "a₁/a₂ = b₁/b₂ = c₁/c₂", "a₁a₂ = b₁b₂ = c₁c₂", "(a极 + a₂)(b₁ + b₂)(c₁ + c₂) = 0"],
+"answer": 0
+},
+{
+"question": "The distance between the parallel lines (x - x₁)/l = (y - y₁)/m = (z - z₁)/n and (x - x₂)/l = (y - y₂)/m = (z - z₂)/n is:",
+"options": ["|(AB × b)| / |b| where A=(x₁,y₁,z₁), B=(x₂,y₂,z₂), b=(l,m,n)", "|AB · b| / |b|", "|AB|", "|AB| / |b|"],
+"answer": 0
+},
+{
+"question": "The equation of the plane containing the line (x - x₁)/l = (y - y₁)/m = (z - z₁)/n and parallel to another line with direction ratios (l₂, m₂, n₂) is:",
+"options": ["|x - x₁ y - y₁ z - z₁| |l m n | = 0 |l₂ m₂ n₂ |", "l(x - x₁) + m(y - y₁) + n(z - z₁) = 0", "l₂(x - x₁) + m₂(y - y₁) + n₂(z - z₁) = 0", "(x - x₁)/l = (y - y₁)/m = (z - z₁)/n"],
+"answer": 0
+},
+{
+"question": "The equation of the plane through the point (x₁, y极, z₁) and perpendicular to the planes a₁x+b₁y+c₁z+d₁=0 and a₂x+b₂y+c₂z+d₂=0 is:",
+"options": ["|x - x₁ y - y₁ z - z₁| |a₁ b₁ c₁ | = 0 |a₂ b₂ c₂ |", "a₁(x - x₁) + b₁(y - y₁) + c₁(z - z₁) = 0", "a₂(x - x₁) + b₂(y - y₁) + c₂(z - z₁) = 0", "(a₁ + a₂)(x - x₁) + (b₁ + b₂)(y - y₁) + (c₁ + c₂)(z - z₁) = 0"],
+"answer": 0
+},
+{
+"question": "The condition for the four points (x₁,y₁,z₁), (x₂,y₂,z₂), (x₃,y₃,z₃), (x₄,y₄,z₄) to be coplanar is that the volume of the tetrahedron formed by them is zero, which is given by the determinant:",
+"options": ["|x₁ y₁ z₁ 1| |x₂ y₂ z₂ 1| |x₃ y₃ z₃ 1| |x₄ y₄ z₄ 1| = 0", "|x₁ y₁ z₁| |x₂ y₂ z₂| |x₃ y₃ z₃| = 0", "|x₁ - x₄, y₁ - y₄, z₁ - z₄| |x₂ - x₄, y₂ - y₄, z₂ - z₄| |x₃ - x₄, y₃ - y₄, z₃ - z₄| = 0", "All of the above"],
+"answer": 3
+},
+{
+"question": "The equation of the sphere passing through the circle x²+y²+z²+2ux+2vy+2wz+d=0, lx+my+nz=p is:",
+"options": ["x²+y²+z²+2ux+2vy+2wz+d + λ(lx+my+nz-p)=0", "x²+y²+z²+2ux+2vy+2wz+d = λ(lx+my+nz-p)", "(x²+y²+z²+2ux+2vy+2wz+d)(lx+my+nz-p)=0", "x²+y²+z²+2ux+2vy+2wz+d + λ = lx+my+nz-p"],
+"answer": 0
+},
+{
+"question": "The angle between the line (x - x₁)/l = (y - y₁)/m = (z - z₁)/n and the plane ax + by + cz + d = 0 is given by:",
+"options": ["sinφ = |al + bm + cn| / √(a²+b²+c²)√(l²+m²+n²)", "cosφ = |al + bm + cn| / √(a²+b²+c²)√(l²+m²+n²)", "tanφ = √(a²+b²+c²)√(l²+m²+n²) / |al + bm + cn|", "cotφ = |al + bm + cn| / √(a²+b²+c²)√(l²+m²+n²)"],
+"answer": 0
+},
+{
+"question": "The equation of the tangent plane to the sphere x²+y²+z²+2ux+2vy+2wz+d=0 at the point (x₁,y₁,z₁) is:",
+"options": ["xx₁ + yy₁ + zz₁ + u(x+x₁) + v(y+y₁) + w(z+z₁) + d = 0", "xx₁ + yy₁ + zz₁ + u(x - x₁) + v(y - y₁) + w(z - z₁) + d = 0", "x² + y² + z² + 2ux + 2vy + 2w极 + d = xx₁ + yy₁ + zz₁", "(x - x₁)² + (y - y₁)² + (极 - z₁)² = r²"],
+"answer": 0
+},
+{
+"question": "The condition for the plane lx + my + nz = p to touch the sphere x²+y²+z²+2ux+2vy+2wz+d=0 is that the perpendicular distance from the center to the plane equals the radius, i.e.:",
+"options": ["|(-u)l + (-v)m + (-w)n - p| / √(l²+m²+n²) = √(u²+v²+w² - d)", "|ul + vm + wn + p| / √(l²+m²+n²) = √(u²+v²+w² - d)", "|ul + vm + wn - p| / √(l²+m²+n²) = √(u²+v²+w² + d)", "|(-u)l + (-v)m + (-w)n + p| / √(l²+m²+n²) = √(u²+v²+w² + d)"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere with center on the line x/1 = y/2 = z/3 and passing through the points (0,0,0) and (1,0,0) is:",
+"options": ["x² + y² + z² - x = 0", "x² + y² + z² - y = 0", "x² + y² + z² - z = 0", "x² + y² + z² - x - y - z = 0"],
+"answer": 2
+},
+{
+"question": "The equation of the sphere concentric with x²+y²+z²-4x-6y-8z-4=0 and passing through (1,1,1) is:",
+"options": ["x²+y²+z²-4x-6y-8z+6=0", "x²+y²+z²-4x-6y-8z-6=0", "x²+y²+z²-4x-6y-8z+4=0", "x²+y²+z²-4x-6y-8z-4=0"],
+"answer": 0
+},
+{
+"question": "The locus of a point which moves such that the ratio of its distances from two fixed points is constant is a:",
+"options": ["Circle", "Plane", "Sphere", "None of these"],
+"answer": 2
+},
+{
+"question": "The equation of the sphere having the circle x²+y²+z²=9, x+y+z=1 as a great circle is:",
+"options": ["x²+y²+z² - 9 + λ(x+y+z-1)=0", "x²+y²+z² - 9 = λ(x+y+z-1)", "(x²+y²+z²-9)(x+y+z-1)=0", "x²+y²+z² + λ(x+y+z-1)=9"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere passing through the points (0,0,0), (1,0,0), (0,1,极), (0,0,1) is:",
+"options": ["x²+y²+z² - x - y - z = 0", "x²+y²+z² + x + y + z = 0", "x²+y²+z² - xy - yz - zx = 0", "x²+y²+z² + xy + yz + zx = 0"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere with center (1,2,3) and touching the plane 2x+3极+4z=5 is:",
+"options": ["(x-1)²+(y-2)²+(z-3)² = |2(1)+3(2)+4(3)-5|² / (2²+3²+4²)", "(x-1)²+(y-2)²+(z-3)² = |2(1)+3(2)+4(3)-5| / √(2²+3²+4²)", "(x-1)²+(y-2)²+(z-3)² = [2(1)+3(2)+4(3)-5]² / (2²+3²+4²)", "(x-1)²+(y-2)²+(z-3)² = [2(1)+3(2)+4(3)-5] / (2²+3²+4²)"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere through the circle x²+y²+z²=1, x+y+z=1 and the point (1,1,1) is:",
+"options": ["x²+y²+z² - 1 + λ(x+y+z-1)=0 with λ determined by (1,1,1)", "x²+y²+z² - 1 = λ(x+y+z-1)", "(x²+y²+z²-1)(x+y+z-1)=0", "x²+y²+z² + λ(x+y+z-1)=1"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere with center on the plane x+y+z=3 and passing through the points (1,0,0), (0,1,0), (0,0,1) is:",
+"options": ["x²+y²+z² - x - y -极 = 0", "x²+y²+z极 - 2x - 2y - 2z + 2 = 0", "x²+y²+z² - 4x - 4y - 4z + 4 = 0", "x²+y²+z² - x - y - z + 1 = 0"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere with center (2,3,4) and touching the x-axis is:",
+"options": ["(x-2)²+(y-3)²+(z-4)² = 3²+4²", "(x-2)²+(y-3)²+(z-4)² = 2²", "(x-2)²+(y-3)²+(z-4)² = 4²", "(x-2)²+(y-3)²+(z-4)² = 5²"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere with center on the z-axis and passing through the points (a,0,0), (0,b,0), (0,0,c) is:",
+"options": ["x²+y²+z² - 2λz + (a²+b²+c²)/2 = 0", "x²+y²+z² - 2λz = 0", "x²+y²+z² - 2λz + λ² = a²+b²+c²", "x²+y²+z² - 2λz + λ² - (a²+b²+c²)/2 = 0"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere passing through (1,1,1) and (2,2,2) and having the smallest possible radius is:",
+"options": ["极²+y²+z² - 3x - 3y - 3z + 6 = 0", "x²+y²+z² - 3x - 3y - 3极 + 3 = 0", "x²+y²+z² - x - y - z = 0", "x²+y²+z² - 2x - 2y - 2z + 2 = 0"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere with center (1,2,3) and cutting the plane x+y+z=1 in a circle of radius 2 is:",
+"options": ["(x-1)²+(y-2)²+(z-3)极 = 4 + [|1+2+3-极|/√3]²", "(x-1)²+(y-2)²+(z-3)² = 4 + [|1+2+3-1|/√3]", "(x-1)²+(y-2)²+(z-3)² = 2 + [|1+2+3-1|/√3]²", "(x-1)²+(y-2)²+(z-3)² = 2 + [|1+2+3-1|/√3]"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere with center (1,1,1) and touching the sphere x²+y²+z²-2x-4y-6z+10=0 externally is:",
+"options": ["(x-1)²+(y-1)²+(z-1)² = [√(1+1+1-10) - 1]²", "(x-1)²+(y-1)²+(z-1)² = [√(1+4+9-10) - 1]²", "(x-1)²+(y-1)²+(z-1)² = [√(1+1+1-10) + 1]²", "(x-1)²+(y-1)²+(z-1)² = [√(1+4极9-10) + 1]²"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere through the points (0,0,0), (a,0,0), (0,b,0), (0,0,c) is:",
+"options": ["x²+y²+z² - ax - by - cz = 0", "x²+y²+z² + ax + by + cz = 0", "x²+y²+z² - (a+b+c)(x+y+z) = 极", "x²+y²+z² + (a+b+c)(x+y+z) = 0"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere with center (1,2,3) and touching the line (x-0)/1 = (y-0)/1 = (z-0)/1 is:",
+"options": ["(x-1)²+(y-2)²+(z-3)² = [|(1×1+2×1+3×1)|/√3]²", "(x-1)²+(y-2)²+(z-3)² = [|(1×1+2×1+3×1 - 0)|/√3]²", "(x-1)²+(y-2)²+(z-3)² = [distance from (1,2,3) to line]²", "(x-1)²+(y-2)²+(z-3)² = [|(1-0)×1 + (2-0)×1 + (3-0)×1|/√3]²"],
+"answer": 2
+},
+{
+"question": "The equation of the sphere with center on the line x/1 = y/2 = z/3 and radius √14 which touches the plane x+y+z=3 is:",
+"options": ["(x-1)²+(y-2)²+(z-3)² = 14", "(x-2)²+(y-4)²+(z-6)² = 14", "(x-1)²+(y-2)²+(z-3)² = 14 and (x+1)²+(y+2)²+(z+3)² = 14", "(x-2)²+(y-4)²+(z-6)² = 14 and (x+2)²+(y+4)²+(z+6)² = 14"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere passing through the points (1,0,0), (0,1,0), (0,0,1) and having the smallest possible radius is:",
+"options": ["x²+y²+z² - x - y - z = 0", "x²+y²+z² - x - y - z + 1/2 = 0", "x²+y²+z² - x - y - z + 1/4 = 0", "x²+y²+z² - x - y - z + 1 = 0"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere with center (1,1,1) and intersecting the sphere x²+y²+z²+2x+4y+6z+10=0 orthogonally is:",
+"options": ["(x-1)²+(y-1)²+(z-1)² = 3 + 2(1)(-1) + 2(1)(-2) + 2(1)(-3) - 10", "(x-1)²+(y-1)²+(z-1)² = 3 - 2(1)(1) - 2(1)(2) - 2(1)(3) + 10", "(x-1)²+(y-1)²+(z-1)² = 3 + 2(1)(1) + 2(1)(2) + 2(1)(3) - 10", "(x-1)²+(y-1)²+(z-1)² = 3 - 2(1)(-1) - 2(1)(-2) - 2(1)(-3) + 10"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere through the circle x²+y²+z²=4, x+y+z=1 and with center on the plane x+y+z=0 is:",
+"options": ["x²+y²+z² - 4 + λ(x+y+z-1)=0 with center (-λ/2, -λ/2, -λ/2) satisfying -λ/2 -λ/2 -λ/2=0", "x²+y²+z² - 4 = λ(x+y+z-1)", "(x²+y²+z²-4)(极+y+z-1)=0", "x²+y²+z² + λ(x+y+z-1)=4"],
+"answer": 0
+},
+{
+"question": "极 equation of the sphere with center (2,3,4) and touching the sphere x²+y²+z²-4x-6y-8z+4=0 internally is:",
+"options": ["(x-2)²+(y-3)²+(z-4)² = [√(4极9+16-4) - √(4+9+16)]²", "(x-2)²+(y-3)²+(z-4)² = [√(4+9+16-4) + √(4+9+16)]²", "(x-2)²+(y-3)²+(z-4)² = [√(4+9+16) - √(4+9+16-4)]²", "(x-2)²+(y-3)²+(z-4)² = [√(4+9+16) + √(4+9+16-4)]²"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere with center on the line x=2y=3z and passing through the points (0,0,0) and (1,1,1) is:",
+"options": ["x²+y²+z² - (6/7)(x+2y+3z)=0", "x²+y²+z² - (6/7)(x+2y+3z)=1", "x²+y²+z² - (7/6)(x+2y+3z)=0", "x²+y²+z² - (7/6)(x+2y+3z)=1"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere through the points (0,0,0), (1,1,0), (1,0,1), (0,1,1) is:",
+"options": ["x²+y²+z² - x - y - z = 0", "x²+y²+z² - x - y - z + 1 = 0", "x²+y²+z² - xy - yz - zx = 0", "x²+y²+z² + xy + yz + zx = 0"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere with center (1,2,3) and cutting the sphere x²+y²+z²=14 orthogonally is:",
+"options": ["(x-1)²+(y-2)²+(z-3)² = 14 - 2(1×0+2×0+3×0) + 0", "(x-1)²+(y-2)²+(z-3)² = 14 - 2(1×0+2×0+3×0) - 0", "(x-1)²+(y-2)²+(z-3)² = 14 + 2(1×0+2×0+3×0) + 0", "(x-1)²+(y-2)²+(z-3)² = 14 + 2(1×0+2×0+3×0) - 0"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere through the circle x²+y²+z²+2x+4y+6z+11=0, x+y+z+3=0 and the point (1,1,1) is:",
+"options": ["x²+y²+z²+2x+4y+6z+11 + λ(x+y+z+3)=0 with λ from (1,1,1)", "x²+y²+z²+2x+4y+6z+11 = λ(x+y+z+3)", "(x²+y²+z²+2x+4y+6z+11)(x+y+z+3)=0", "x²+y²+z²+2x+4y+6z+11 + λ = x+y+z+3"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere with center (1,1,1) and radius equal to the distance from (1,1,1) to the line (x-0)/1 = (y-0)/1 = (z-0)/1 is:",
+"options": ["(x-1)²+(y-1)²+(z-1)² = [|(1×1+1×1+1×1)|/√3]²", "(x-1)²+(y-1)²+(z-1)² = [|(1×1+1×1+1×1 - 0)|/√3]²", "(x-1)²+(y-1)²+(z-1)² = [distance from (1,1,1) to line]²", "(x-1)²+(y-1)²+(z-1)² = [|(1-0)×1 + (1-0)×1 + (1-0)×1|/√3]²"],
+"answer": 2
+},
+{
+"question": "The equation of the sphere with center on the plane x=0 and passing through the points (1,1,1), (1,-1,1), (1,1,-1) is:",
+"options": ["x²+y²+z² - 2x = 0", "x²+y²+z² + 2x = 0", "x²+y²+z² - 2y = 0", "x²+y²+z² - 2z = 0"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere through the points (0,0,0), (1,1,0), (1,0,1), (0,1,1) and having the smallest possible radius is:",
+"options": ["x²+y²+z² - x - y - z = 0", "x²+y²+z² - x - y - z + 1/2 = 0", "x²+y²+z² - x - y - z + 1/极 = 0", "x²+y²+z² - x - y - z + 1 = 0"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere with center (1,2,3) and touching the sphere x²+y²+z²-2x-4y-6z+10=0 externally is:",
+"options": ["(x-1)²+(y-2)²+(z-3)² = [√(1+4+9-10) - √(1+4+9)]²", "(x-1)²+(y-2)²+(z-3)² = [√(1+4+9-10) + √(1+4+9)]²", "(x-1)²+(y-2)²+(z-3)² = [√(1+4+9) - √(1+4+9-10)]²", "(x-1)²+(y-2)²+(z-3)² = [√(1+4+9) + √(1+4+9-10)]²"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere through the circle x²+y²+z²=9, x+y+z=1 and with center on the line x/1 = y/2 = z/3 is:",
+"options": ["x²+y²+z²-9 + λ(x+y+z-1)=0 with center (-λ/2, -λ/2, -λ/2) satisfying (-λ/2)/1 = (-λ/2)/2 = (-λ/2)/3", "x²+y²+z²-9 = λ(x+y+z-1)", "(x²+y²+z²-9)(x+y+z-1)=0", "x²+y²+z² + λ(x+y+z-1)=9"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere with center (1,1,1) and cutting the plane x+y+z=1 in a circle of radius 1 is:",
+"options": ["(x-1)²+(y-1)²+(z-1)² = 1 + [|1+1+1-1|/√3]²", "(x-1)²+(y-1)²+(z-1)² = 1 + [|1+1+1-1|/√3]", "(x-1)²+(y-1)²+(z-1)² = 1 + [|1+1+1-1|/3]", "(x-1)²+(y-1)²+(z-1)² = 1 + [|1+1+1-1|/3]²"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere through the points (0,0,0), (a,0,0), (0,b,0), (0,0,c) and having the smallest possible radius is:",
+"options": ["x²+y²+z² - (a+b+c)(x+y+z)/3 = 0", "x²+y²+z² - (a+b+c)(x+y+z)/2 = 0", "x²+y²+z² - (a+b+c)(x+y+z) = 0", "x²+y²+z² - (a²+b²+c²)(x+y+z)/(a+b+c) = 0"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere with center on the line x=1, y=2 and passing through the points (0,0,0), (1,1,1) is:",
+"options": ["(x-1)²+(y-2)²+(z-3)² = 14", "(x-1)²+(y-2)²+(z-0)² = 5", "(x-1)²+(y-2)²+(z-1)² = 6", "(x-1)²+(y-2)²+(z-2)² = 9"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere through the circle x²+y²+z²+2x+4y+6z+11=0,极+y+z+3=0 and with center on the plane x=极 is:",
+"options": ["x²+y²+z²+2x+4y+6z+11 + λ(x+y+z+3)=0 with center (-1-λ/2, -2-λ/2, -3-λ/2) satisfying -1-λ/2=0", "x²+y²+z²+2x+4y+6z+11 = λ(x+y+z+3)", "(x²+y²+z²+2x+4y+6z+11)(x+y+z+3)=0", "x²+y²+z²+2x+4y+极z+11 + λ = x+y+z+3"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere with center (1,2,3) and touching the sphere x²+y²+z²-2x-4y-6z+10=0 internally is:",
+"options": ["(x-1)²+(y-2)²+(z-3)² = [√(1+4+9-10) - √(1+4+9)]²", "(x-1)²+(y-2)²+(z-3)² = [√(1+4+9-10) + √(1+4+9)]²", "(x-1)²+(y-2)²+(z-3)² = [√(1+4+9) - √(1+4+9-10)]²", "(x-1)²+(y-2)²+(z-3)² = [√(1+4+9) + √(1+4+9-10)]²"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere through the points (0,0,0), (1,0,0), (0,1,0), (0,0,1) and having the largest possible radius is:",
+"options": ["x²+y²+z² - x - y - z = 0", "x²+y²+z² - x - y - z + 1/2 = 0", "x²+y²+z² - x - y - z + 1/4 = 0", "x²+y²+z² - x - y - z + 1 = 0"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere with center (1,1,1) and cutting the sphere x²+y²+z²=3 orthogonally is:",
+"options": ["(x-1)²+(y-1)²+(z-1)² = 3 - 2(1×0+1×0+1×0) + 0", "(x-1)²+(y-1)²+(z-1)² = 3 - 2(1×0+1×0+1×0) - 0", "(x-1)²+(y-1)²+(z-1)² = 3 + 2(1×0+1×0+1×极) + 0", "(x-1)²+(y-1)²+(z-1)² = 3 + 2(1×0+1×0+1×0) - 0"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere through the circle x²+y²+z²=4, x+y+z=1 and with center on the line x/1 = y/1 = z/1 is:",
+"options": ["x²+y²+z²-4 + λ(x+y+z-1)=0 with center (-λ/2, -λ/2, -λ/2) satisfying -λ/2 = -λ/2 = -λ/2", "x²+y²+z²-4 = λ(x+y+z-1)", "(x²+y²+z²-4)(x+y+z-1)=0", "x²+y²+z² + λ(x+y+z-1)=4"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere with center (2,3,4) and touching the sphere x²+y²+z²-4x-6y-8z+4=0 externally is:",
+"options": ["(x-2)²+(y-3)²+(z-4)² = [√(4+9+16-4) - √(4+9+16)]²", "(x-2)²+(y-3)²+(z-4)² = [√(4+9+16-4) + √(4+9+16)]²", "(x-2)²+(y-3)²+(z-4)² = [√(4+9+16) - √(4+9+16-4)]²", "(x-2)²+(y-3)²+(z-4)² = [√(4+9+16) + √(4+9+16-4)]²"],
+"answer": 0
+},
+{
+"question": "The equation of the sphere through the points (0,0,0), (1,1,0), (1,0,1), (0,极,1) and having the largest possible radius is:",
+"options": ["x²+y²+z² - x - y - z = 0", "x²+y²+z² - x - y - z + 1/2 = 0", "x²+y²+z² - x - y - z + 1/4 = 0", "x²+y²+z² - x - y - z + 1 = 0"],
+"answer": 0
+},
+
   {
     "question": "In the Cartesian coordinate system, the point P(-5, 2) is located in which quadrant?",
     "options": [

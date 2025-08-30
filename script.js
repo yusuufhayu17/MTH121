@@ -1,2088 +1,2553 @@
 const questions = [
   {
-    question: "What is the relationship between the Beta and Gamma functions as proven in the document?",
-    options: [
-      "B(x,y)=Γ(x)Γ(y)Γ(x+y)",
-      "B(x,y)=Γ(x+y)/Γ(x)Γ(y)",
-      "B(x,y)=Γ(x)Γ(y)/Γ(x+y)",
-      "B(x,y)=Γ(x)Γ(y)/Γ(x)-Γ(y)"
+    "question": "In the Cartesian coordinate system, the point P(-5, 2) is located in which quadrant?",
+    "options": [
+      "First",
+      "Second",
+      "Third",
+      "Fourth"
     ],
-    answer: 2
+    "answer": 1
   },
   {
-    question: "The proof for the relationship between the Beta and Gamma functions starts with the definition of which function?",
-    options: [
-      "Beta function",
-      "Gamma function",
-      "Legendre polynomial",
-      "Stoke's theorem"
+    "question": "The distance between points A(4, -7) and B(-1, 5) is:",
+    "options": [
+      "13",
+      "17",
+      "15",
+      "12"
     ],
-    answer: 1
+    "answer": 0
   },
   {
-    question: "According to the document, the Gamma function is defined by which integral?",
-    options: [
-      "∫₀^∞ e^(-t)t^(x-1)dt",
-      "∫₀^∞ e^(-t)t^(x+1)dt",
-      "∫₀¹ t^(x-1)(1-t)^(y-1)dt",
-      "∫₀^(π/2) sin^(2x-1)θ cos^(2y-1)θ dθ"
+    "question": "The coordinates of the point which divides the line joining (8, 9) and (-7, 4) internally in the ratio 2:3 are:",
+    "options": [
+      "(2, 7)",
+      "(1, 5)",
+      "(3, 6)",
+      "(4, 8)"
     ],
-    answer: 0
+    "answer": 0
   },
   {
-    question: "To evaluate the Gamma function, what substitution is made for t?",
-    options: ["t=u", "t=u²", "t=v", "t=x+y"],
-    answer: 1
-  },
-  {
-    question: "The proof uses a transformation to what coordinate system to solve the integral?",
-    options: [
-      "Cartesian coordinates",
-      "Cylindrical coordinates",
-      "Polar coordinates",
-      "Spherical coordinates"
+    "question": "The midpoint of the line segment joining A(0, 0) and B(8, -5) is:",
+    "options": [
+      "(8, -5)",
+      "(4, -2.5)",
+      "(0, 0)",
+      "(4, 5)"
     ],
-    answer: 2
+    "answer": 1
   },
   {
-    question: "What is the value of sin²θ + cos²θ used in the polar coordinate transformation?",
-    options: ["1", "-1", "0", "2"],
-    answer: 0
-  },
-  {
-    question: "The integral form of the Beta function is given as:",
-    options: [
-      "2∫₀^(π/2) sin^(2x-1)θ cos^(2y-1)θ dθ",
-      "∫₀^(π/2) sin^(2x-1)θ cos^(2y-1)θ dθ",
-      "2∫₀^∞ sin^(2x-1)θ cos^(2y-1)θ dθ",
-      "∫₀¹ t^(x-1)(1-t)^(y-1)dt"
+    "question": "The area of a triangle with vertices A(2, 4), B(-4, -6), C(6, 0) is:",
+    "options": [
+      "25 square units",
+      "30 square units",
+      "35 square units",
+      "40 square units"
     ],
-    answer: 0
+    "answer": 1
   },
   {
-    question: "The document states that the Beta function, B(x,y), can also be written in integral form as:",
-    options: [
-      "2∫₀^(π/2) sin^(2x-1)θ cos^(2y-1)g dθ",
-      "2∫₀^(π/2) sin^(2x-1)θ cos^(2y-1)e dθ",
-      "2∫₀^(π/2) sin^(2n-1)θ cos^(2y-1)g dθ",
-      "2∫₀^(x/3) sin^(2x-1)θ cos^(2y-1)g dθ"
+    "question": "Points are said to be collinear if:",
+    "options": [
+      "They form a right-angled triangle",
+      "The area of the triangle formed by them is zero",
+      "Their distances are equal",
+      "They lie on the x-axis"
     ],
-    answer: 3
+    "answer": 1
   },
   {
-    question: "The proof involves separating the terms with r and the terms with θ from a double integral.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "What is the generating function for Legendre polynomials, as shown in the document?",
-    options: [
-      "1/√(1-2tx+t²) = ∑ₙ₌₀^∞ Pₙ(x)tⁿ",
-      "1/(1-2tx+t²) = ∑ₙ₌₀^∞ Pₙ(x)tⁿ",
-      "1/√(1-2tx+t²) = ∑ₙ₌₀^∞ Pₙ(x)t^(2n)",
-      "1/√(1-t²) = ∑ₙ₌₀^∞ Pₙ(x)tⁿ"
+    "question": "The gradient (slope) of the line passing through A(-5, 2) and B(3, 7) is:",
+    "options": [
+      "5/8",
+      "8/5",
+      "3/2",
+      "2/3"
     ],
-    answer: 0
+    "answer": 0
   },
   {
-    question: "The document proves the orthogonality property of Legendre polynomials when m=n. What is the value of ∫₋₁¹ Pₙ²(x)dx?",
-    options: ["2/(2n-1)", "2/(2n+1)", "1/(2n+1)", "0"],
-    answer: 1
-  },
-  {
-    question: "What is the first step in proving the orthogonality property of Legendre polynomials from the generating function?",
-    options: [
-      "Integrating both sides from -1 to 1",
-      "Differentiating both sides",
-      "Squaring both sides",
-      "Multiplying by t"
+    "question": "The gradient of a line that makes an angle of 60° with the positive x-axis is:",
+    "options": [
+      "1/√3",
+      "√3",
+      "1",
+      "0"
     ],
-    answer: 2
+    "answer": 1
   },
   {
-    question: "After squaring the generating function, what is the next step?",
-    options: [
-      "Equating the coefficients of t^(2n)",
-      "Differentiating with respect to x",
-      "Integrating from -1 to 1",
-      "Substituting t=1"
+    "question": "If two lines are parallel, then their slopes m1 and m2 are:",
+    "options": [
+      "m1 * m2 = -1",
+      "m1 = m2",
+      "m1 = 1/m2",
+      "m1 + m2 = 0"
     ],
-    answer: 2
+    "answer": 1
   },
   {
-    question: "In the proof for the orthogonality of Legendre polynomials, the integral ∫₋₁¹ dx/(1-2tx+t²) is evaluated. What is the result?",
-    options: [
-      "(1/t)ln((1-t)/(1+t))",
-      "(1/t)ln((1+t)/(1-t))",
-      "ln(1-2tx+t²)",
-      "(1/t)e^(-t)"
+    "question": "If two lines are perpendicular, the relationship between their slopes m1 and m2 is:",
+    "options": [
+      "m1 = m2",
+      "m1 = -1/m2",
+      "m1 + m2 = 1",
+      "m1 * m2 = 1"
     ],
-    answer: 1
+    "answer": 1
   },
   {
-    question: "The proof of the orthogonality of Legendre polynomials concludes by equating the coefficients of which term?",
-    options: ["t", "tⁿ", "t^(2n)", "x"],
-    answer: 2
-  },
-  {
-    question: "The second problem in the document is to verify which theorem?",
-    options: [
-      "Green's Theorem",
-      "Gauss's Divergence Theorem",
-      "Stoke's Theorem",
-      "Fundamental Theorem of Calculus"
+    "question": "In polar coordinates, the point (r, θ) is equivalent to:",
+    "options": [
+      "(r, θ + 360°)",
+      "(-r, θ)",
+      "(r, -θ)",
+      "All of the above can represent the same point"
     ],
-    answer: 2
+    "answer": 3
   },
   {
-    question: "What is the vector field A given in the Stoke's theorem problem?",
-    options: [
-      "A=(y-z+2)x̂+(y-x+4)ŷ-xzẑ",
-      "A=(y-z+2)x̂+(yz+4)ŷ-xzẑ",
-      "A=(y-z+2)x̂+(z-x+4)ŷ-xzẑ",
-      "A=(y-z+2)x̂+(yz+4)ŷ-xzẑ"
-    ],
-    answer: 1
-  },
-  {
-    question: "The problem is to verify the theorem for a cube above which plane?",
-    options: ["xz-plane", "yz-plane", "xy-plane", "xy, yz, and xz planes"],
-    answer: 2
-  },
-  {
-    question: "What are the dimensions of the cube for which Stoke's theorem is verified?",
-    options: [
-      "0 ≤ x ≤ 1, 0 ≤ y ≤ 1, 0 ≤ z ≤ 1",
-      "0 ≤ x ≤ 2, 0 ≤ y ≤ 2, 0 ≤ z ≤ 2",
-      "0 ≤ x ≤ 1, 0 ≤ y ≤ 2, 0 ≤ z ≤ 2",
-      "0 ≤ x ≤ 2, 0 ≤ y ≤ 1, 0 ≤ z ≤ 1"
-    ],
-    answer: 1
-  },
-  {
-    question: "The document calculates the curl of the vector field, ∇×A. What is the result?",
-    options: [
-      "-y x̂ + (z+1) ŷ + ẑ",
-      "y x̂ + (z+1) ŷ - ẑ",
-      "-y x̂ + (z+1) ŷ - ẑ",
-      "-y x̂ + (z-1) ŷ - ẑ"
-    ],
-    answer: 2
-  },
-  {
-    question: "What is the result of the surface integral over surface DEFG?",
-    options: ["4", "-4", "8", "-8"],
-    answer: 1
-  },
-  {
-    question: "What is the result of the surface integral over surface ABCD?",
-    options: ["4", "-4", "8", "-8"],
-    answer: 0
-  },
-  {
-    question: "What is the result of the surface integral over surface ABEF?",
-    options: ["4", "-4", "8", "-8"],
-    answer: 2
-  },
-  {
-    question: "What is the result of the surface integral over surface OGDC?",
-    options: ["4", "-4", "8", "-8"],
-    answer: 3
-  },
-  {
-    question: "What is the result of the surface integral over surface BCDE?",
-    options: ["4", "-4", "8", "-8"],
-    answer: 1
-  },
-  {
-    question: "The Beta function can be defined using which other integral?",
-    options: [
-      "∫₀¹ t^(x-1)(1-t)^(y-1)dt",
-      "∫₀^∞ t^(x-1)(1-t)^(y-1)dt",
-      "∫₀¹ t^(x-1)(1+t)^(y-1)dt",
-      "∫₀^∞ t^x(1-t)^y dt"
-    ],
-    answer: 0
-  },
-  {
-    question: "The expression Γ(x+y) = 2∫₀^∞ e^(-r²)r^(2(x+y)-1)dr is derived by substituting which variable?",
-    options: ["u=r", "v=r", "t=r²", "t=r"],
-    answer: 2
-  },
-  {
-    question: "What law of indices is mentioned in the proof of the Gamma function?",
-    options: [
-      "x^a × x^b = x^(a-b)",
-      "x^a × x^b = x^(ab)",
-      "x^a × x^b = x^(a+b)",
-      "x^a ÷ x^b = x^(a+b)"
-    ],
-    answer: 2
-  },
-  {
-    question: "The proof of Stoke's Theorem involves evaluating the curl of a vector field. The symbol for curl is:",
-    options: ["∇·A", "∇×A", "∇A", "∇²A"],
-    answer: 1
-  },
-  {
-    question: "The problem on Stoke's Theorem requires calculating surface integrals over how many surfaces of the cube?",
-    options: ["4", "5", "6", "3"],
-    answer: 1
-  },
-  {
-    question: "What is the value of the line integral around the boundary of the surface in the Stoke's theorem problem?",
-    options: [
-      "Sum of all surface integrals",
-      "Curl of the vector field",
-      "Divergence of the vector field",
-      "Zero"
-    ],
-    answer: 0
-  },
-  {
-    question: "In the proof for Legendre polynomials, the integral is taken from which limits?",
-    options: ["0 to 1", "-∞ to ∞", "-1 to 1", "0 to π/2"],
-    answer: 2
-  },
-  {
-    question: "The document mentions Legendre polynomials are related to which polynomial type?",
-    options: [
-      "Chebyshev polynomials",
-      "Orthogonal polynomials",
-      "Hermite polynomials",
-      "Laguerre polynomials"
-    ],
-    answer: 1
-  },
-  {
-    question: "The proof of the Beta-Gamma relationship involves which type of double integral?",
-    options: [
-      "∫∫ e^(-r²) dudv",
-      "∫∫ e^(-(u²+v²)) dudv",
-      "∫∫ u²+v² dudv",
-      "∫∫ e^(-u²)e^(-v²) dudv"
-    ],
-    answer: 1
-  },
-  {
-    question: "The document mentions that the solution to the Legendre polynomial problem was copied from a textbook.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "The document's Stoke's theorem problem asks to verify the theorem for a cube above the xy-plane, which means excluding which surface?",
-    options: [
-      "Surface BCDE",
-      "Surface AFGO",
-      "Surface DEFG",
-      "Surface ABCD"
-    ],
-    answer: 1
-  },
-  {
-    question: "In the Stoke's theorem problem, what is the normal vector n for the surface BCDE?",
-    options: ["x̂", "ŷ", "ẑ", "-ẑ"],
-    answer: 2
-  },
-  {
-    question: "What is the value of the curl of A at the point (0,0,0)?",
-    options: [
-      "-y x̂ + (z+1) ŷ - ẑ",
-      "ŷ - ẑ",
-      "-y x̂ - ẑ",
-      "(z+1) ŷ"
-    ],
-    answer: 1
-  },
-  {
-    question: "The document provides a 'short solution' for which problem?",
-    options: [
-      "Legendre polynomials",
-      "Stoke's theorem",
-      "Beta and Gamma functions",
-      "All of the above"
-    ],
-    answer: 2
-  },
-  {
-    question: "What is the result of the surface integral over surface DEFG, which has a normal vector of x̂ and a surface area of 4?",
-    options: ["4", "-4", "8", "-8"],
-    answer: 1
-  },
-  {
-    question: "The transformation from Cartesian to Polar coordinates is given by:",
-    options: [
+    "question": "The polar coordinates (r, θ) are related to rectangular coordinates (x, y) by:",
+    "options": [
       "x = r cosθ, y = r sinθ",
-      "u = r sinθ, v = r cosθ",
-      "u = r cosθ, v = r sinθ",
-      "x = r sinθ, y = r cosθ"
+      "x = r sinθ, y = r cosθ",
+      "r = x + y, θ = tan(x/y)",
+      "r = xy, θ = sin(x/y)"
     ],
-    answer: 1
+    "answer": 0
   },
   {
-    question: "The Beta function proof involves a change of variables in the Gamma function definition.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "What are the limits of integration for θ in the polar coordinate transformation?",
-    options: ["0 to π", "0 to 2π", "0 to π/2", "0 to 1"],
-    answer: 2
-  },
-  {
-    question: "In the Legendre polynomial proof, what happens to the right-hand side of the equation when m=n?",
-    options: [
-      "It becomes ∑ₙ₌₀^∞ ∫₋₁¹ Pₙ²(x) dx",
-      "It becomes ∑ₘ₌₀^∞ ∑ₙ₌₀^∞ ∫₋₁¹ Pₘ(x) Pₙ(x) dx",
-      "It becomes ∑ₙ₌₀^∞ {∫₋₁¹ Pₙ²(x)dx} t^(2n)",
-      "It becomes ∫₋₁¹ Pₙ²(x) dx"
+    "question": "The rectangular coordinates of the polar point (3, 135°) are:",
+    "options": [
+      "(3√2/2, 3√2/2)",
+      "(-3√2/2, 3√2/2)",
+      "(3/2, -3/2)",
+      "(0, 3)"
     ],
-    answer: 2
+    "answer": 1
   },
   {
-    question: "What is the value of the integral ∫₋₁¹ Pₘ(x)Pₙ(x)dx when m ≠ n?",
-    options: ["2/(2n+1)", "0", "1", "2/(2m+1)"],
-    answer: 1
-  },
-  {
-    question: "In the Stoke's theorem problem, what is the normal vector n for the surface ABEF?",
-    options: ["-ŷ", "ŷ", "ẑ", "-ẑ"],
-    answer: 1
-  },
-  {
-    question: "The curl of a vector field is a:",
-    options: ["Scalar", "Vector", "Matrix", "Tensor"],
-    answer: 1
-  },
-  {
-    question: "The Stoke's theorem states that the surface integral of the curl of a vector field is equal to the:",
-    options: [
-      "Line integral of the vector field around the boundary",
-      "Volume integral of the divergence of the vector field",
-      "Surface integral of the vector field",
-      "Line integral of the vector field"
+    "question": "A Cartesian equation is any equation of the form:",
+    "options": [
+      "r = f(θ)",
+      "y = f(x)",
+      "f(x, y) = 0",
+      "Both b and c"
     ],
-    answer: 0
+    "answer": 3
   },
   {
-    question: "What is the value of the Gamma function at x=1?",
-    options: ["0", "1", "∞", "undefined"],
-    answer: 1
-  },
-  {
-    question: "The generating function for Legendre polynomials is given as a summation from n=0 to:",
-    options: ["1", "n", "∞", "2n"],
-    answer: 2
-  },
-  {
-    question: "When proving the orthogonality property, what is the result of the integral of the generating function?",
-    options: [
-      "(1/t)ln((1-t)/(1+t))",
-      "(1/t)ln((1+t)/(1-t))",
-      "∑ₙ₌₀^∞ (2t^(2n+1))/(2n+1)",
-      "∑ₙ₌₀^∞ {∫₋₁¹ Pₙ²(x)dx} t^(2n)"
+    "question": "To convert the Cartesian equation x² + y² = 9 to a polar equation, we get:",
+    "options": [
+      "r = 9",
+      "r = 3",
+      "r² = 9",
+      "θ = 9"
     ],
-    answer: 1
+    "answer": 2
   },
   {
-    question: "The proof of the Beta-Gamma function relationship is a proof by:",
-    options: ["Induction", "Contradiction", "Direct proof", "Construction"],
-    answer: 2
-  },
-  {
-    question: "What is the value of ∫₋₁¹ Pₙ²(x)dx when n=0?",
-    options: ["2", "2/3", "2/5", "0"],
-    answer: 0
-  },
-  {
-    question: "What are the dimensions of the cube's faces in the Stoke's theorem problem?",
-    options: ["1×1", "2×2", "1×2", "2×1"],
-    answer: 1
-  },
-  {
-    question: "The line integral in Stoke's theorem is calculated around the boundary of the surface.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "In the proof of the Beta-Gamma relationship, the double integral is transformed into a product of two single integrals.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "What is the normal vector n for the surface AFGO?",
-    options: ["x̂", "ŷ", "ẑ", "-ẑ"],
-    answer: 3
-  },
-  {
-    question: "The substitution u=1-2tx+t² is used to evaluate which integral?",
-    options: [
-      "∫₀^∞ e^(-t)t^(x-1)dt",
-      "∫₀¹ t^(x-1)(1-t)^(y-1)dt",
-      "∫₋₁¹ dx/(1-2tx+t²)",
-      "∫₀^(π/2) sin^(2x-1)θ cos^(2y-1)θ dθ"
+    "question": "Parametric equations define a curve using:",
+    "options": [
+      "A single equation in x and y",
+      "A third variable called a parameter",
+      "Only polar coordinates",
+      "The gradient of the tangent"
     ],
-    answer: 2
+    "answer": 1
   },
   {
-    question: "The generating function for Legendre polynomials is given as a series of which variable?",
-    options: ["x", "t", "n", "Pₙ(x)"],
-    answer: 1
-  },
-  {
-    question: "In the proof of Stoke's theorem, the surface integral over surface OGDC is calculated. The normal vector is given as:",
-    options: ["ŷ", "-ŷ", "x̂", "-x̂"],
-    answer: 1
-  },
-  {
-    question: "The integral ∫₋₁¹ dx/(1-2tx+t²) is evaluated with respect to which variable?",
-    options: ["x", "t", "u", "a constant"],
-    answer: 0
-  },
-  {
-    question: "What is the relationship between Γ(x+y) and the double integral shown in the Beta-Gamma proof?",
-    options: [
-      "Γ(x+y) = 2∫₀^∞ e^(-r²)r^(2(x+y)-1)dr",
-      "Γ(x+y) = ∫₀^∞ e^(-r²)r^(2(x+y)-1)dr",
-      "Γ(x+y) = 2∫₀^(π/2) e^(-r²)r^(2(x+y)-1)dr",
-      "Γ(x+y) = ∫₀¹ e^(-r²)r^(2(x+y)-1)dr"
+    "question": "The Cartesian equation of the curve defined by x = 3cos t, y = 3sin t is:",
+    "options": [
+      "y = x²",
+      "x² + y² = 9",
+      "x² - y² = 9",
+      "y = 3x"
     ],
-    answer: 0
+    "answer": 1
   },
   {
-    question: "The orthogonality property of Legendre polynomials is expressed as ∫₋₁¹ Pₘ(x)Pₙ(x)dx = 0 for m ≠ n.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "The final value of the surface integral over all surfaces (excluding the xy-plane) is the sum of the individual surface integrals.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "What is the integral of 1/u?",
-    options: ["ln(u)", "e^u", "-1/u²", "u"],
-    answer: 0
-  },
-  {
-    question: "The document refers to the Beta function as a different version of the Gamma function.",
-    options: ["True", "False"],
-    answer: 1
-  },
-  {
-    question: "What is the first step in solving the Stoke's theorem problem?",
-    options: [
-      "Calculating the surface integral",
-      "Calculating the curl of the vector field",
-      "Calculating the line integral",
-      "Sketching the cube"
+    "question": "The equation of a straight line with gradient 2 and y-intercept -5 is:",
+    "options": [
+      "y = -5x + 2",
+      "y = 2x - 5",
+      "2y = x - 5",
+      "y = 5x - 2"
     ],
-    answer: 1
+    "answer": 1
   },
   {
-    question: "In the Stoke's theorem problem, what are the limits of integration for x, y, and z?",
-    options: ["from 0 to 1", "from 0 to 2", "from 1 to 2", "from 0 to 3"],
-    answer: 1
-  },
-  {
-    question: "The document proves that B(x,y)=Γ'(x)Γ'(y)/Γ(x(x))",
-    options: ["True", "False"],
-    answer: 1
-  },
-  {
-    question: "The problem is to verify Stoke's theorem, meaning the line integral should be equal to the surface integral.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "In the Legendre polynomial proof, the coefficient of t^(2n) is equated to find the final result.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "The Gamma function is mentioned as a definite integral from which limits?",
-    options: ["0 to 1", "0 to ∞", "-1 to 1", "0 to π/2"],
-    answer: 1
-  },
-  {
-    question: "The normal vector for a surface parallel to the yz-plane is:",
-    options: ["±ŷ", "±ẑ", "±x̂", "±î"],
-    answer: 2
-  },
-  {
-    question: "What is the purpose of the transformation to polar coordinates in the Beta-Gamma proof?",
-    options: [
-      "To simplify the integral",
-      "To confuse the reader",
-      "To make the integral more complex",
-      "To change the limits of integration to 0 and 1"
+    "question": "The equation of the line passing through points (-2, -1) and (3, 4) is:",
+    "options": [
+      "y = x + 1",
+      "y = x - 1",
+      "y = -x + 1",
+      "y = 2x + 3"
     ],
-    answer: 0
+    "answer": 0
   },
   {
-    question: "The document states that the Beta function is also known as Euler's integral of the first kind.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "What is the final step in the proof of the Beta-Gamma relationship?",
-    options: [
-      "Dividing both sides by 2∫₀^∞ e^(-r²)r^(2(x+y)-1)dr",
-      "Squaring both sides",
-      "Taking the natural logarithm",
-      "Integrating both sides"
+    "question": "The intercept form of a line cutting axes at (a, 0) and (0, b) is:",
+    "options": [
+      "y = mx + c",
+      "x/a + y/b = 1",
+      "(y - y1) = m(x - x1)",
+      "Ax + By + C = 0"
     ],
-    answer: 0
+    "answer": 1
   },
   {
-    question: "What is the sum of all surface integrals in the Stoke's theorem problem?",
-    options: [
-      "-4+4+8-8-4",
-      "-4+4+8-8+4",
-      "-4-4+8-8-4",
-      "4+4+8+8+4"
+    "question": "The distance from the point (2, 1) to the line 3x + 4y - 5 = 0 is:",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
     ],
-    answer: 0
+    "answer": 0
   },
   {
-    question: "The document proves the formula for ∫₋₁¹ Pₙ²(x)dx from the generating function.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "What is the value of the integral ∫₀² -2 dz?",
-    options: ["0", "2", "-2", "-4"],
-    answer: 3
-  },
-  {
-    question: "The integral ∫₀² (2z+2)dz is evaluated for which surface?",
-    options: ["OGDC", "DEFG", "ABEF", "BCDE"],
-    answer: 2
-  },
-  {
-    question: "What is the value of the integral ∫₀² ∫₀² -1 dx dy?",
-    options: ["-1", "-2", "-4", "4"],
-    answer: 2
-  },
-  {
-    question: "The Stoke's theorem problem is about a cube above the xy-plane, which means the bottom surface is excluded.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "The document mentions the term 'orthogonal polynomials' in the context of which problem?",
-    options: [
-      "Beta-Gamma function",
-      "Stoke's theorem",
-      "Legendre polynomials",
-      "All of the above"
+    "question": "The gradient of the tangent to the curve y = (1-x)(2+x) at x=2 is:",
+    "options": [
+      "-5",
+      "5",
+      "-3",
+      "0"
     ],
-    answer: 2
+    "answer": 0
   },
   {
-    question: "What is the value of the integral ∫₀² (-2z-2)dz?",
-    options: ["-4", "-8", "8", "4"],
-    answer: 1
-  },
-  {
-    question: "The Gamma function Γ(y) is defined by which integral?",
-    options: [
-      "∫₀^∞ e^(-t)t^(y-1)dt",
-      "∫₀^∞ e^(-t)t^y dt",
-      "∫₀¹ e^(-t)t^(y-1)dt",
-      "∫₀^∞ e^(-u²)u^(2y-1)du"
+    "question": "A circle is defined as the locus of points that are:",
+    "options": [
+      "Equidistant from two fixed points",
+      "At a constant distance from a fixed point",
+      "At a constant ratio of distance from a fixed point and line",
+      "The sum of distances to two points is constant"
     ],
-    answer: 0
+    "answer": 1
   },
   {
-    question: "The generating function for Legendre polynomials is a power series in which variable?",
-    options: ["t", "x", "n", "m"],
-    answer: 0
-  },
-  {
-    question: "The final step in proving the orthogonality of Legendre polynomials is to:",
-    options: [
-      "Integrate from -1 to 1",
-      "Equate coefficients of t^(2n)",
-      "Square both sides",
-      "Substitute t=1"
+    "question": "The equation of a circle with center (5, -2) and radius 2 is:",
+    "options": [
+      "(x-5)² + (y+2)² = 4",
+      "(x+5)² + (y-2)² = 4",
+      "(x-5)² + (y+2)² = 2",
+      "x² + y² = 25"
     ],
-    answer: 1
+    "answer": 0
   },
   {
-    question: "The document mentions 'Irgendre's' which is likely a misspelling of which polynomial?",
-    options: ["Legendre", "Laguerre", "Hermite", "Chebyshev"],
-    answer: 0
-  },
-  {
-    question: "In the Stoke's theorem problem, the curl of A is a vector.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "What is the value of the integral ∫₀² ∫₀² (z+1)dx dz?",
-    options: ["4", "8", "2", "-4"],
-    answer: 1
-  },
-  {
-    question: "The document provides a solution for the orthogonality of Legendre polynomials for which condition?",
-    options: ["m ≠ n", "m = n", "m+n=0", "m=n=0"],
-    answer: 1
-  },
-  {
-    question: "The substitution t=v² is used to evaluate which function?",
-    options: ["B(x,y)", "Γ(x)", "Γ(y)", "Γ(x+y)"],
-    answer: 1
-  },
-  {
-    question: "The document mentions a 'short solution' for the proof of the Beta-Gamma relationship, which is for:",
-    options: ["Cramming", "Detailed understanding", "Beginners", "Experts"],
-    answer: 0
-  },
-  {
-    question: "The Stoke's theorem problem involves calculating the surface integral of the curl of A.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "What is the result of the integral ∫₀² (y²/2)|₀² dz?",
-    options: ["2", "4", "8", "0"],
-    answer: 1
-  },
-  {
-    question: "The document provides a proof for the relationship between the Beta and Gamma functions.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "In the Stoke's theorem problem, the vector field A is given with how many components?",
-    options: ["1", "2", "3", "4"],
-    answer: 2
-  },
-  {
-    question: "The document states that the Beta function can be expressed as a definite integral of sine and cosine functions.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "The value of the surface integral over a particular surface can be zero.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "The document is titled 'MTH222 (ALL SOLVED EXERCISE) SOLUTIONS BY N.S @COOL'.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "A vector-valued function is a function that maps real numbers to what?",
-    options: ["Scalars", "Vectors", "Matrices", "Tensors"],
-    answer: 1
-  },
-  {
-    question: "The derivative of a vector-valued function X(t)=x(t)i+y(t)j+z(t)k is found by:",
-    options: [
-      "Taking the derivative of only the i component",
-      "Taking the derivative of only the j component",
-      "Taking the derivative of each component function",
-      "Taking the derivative of only the k component"
+    "question": "The general form of the equation of a circle is:",
+    "options": [
+      "x² + y² = r²",
+      "(x-h)² + (y-k)² = r²",
+      "x² + y² + 2gx + 2fy + c = 0",
+      "Ax + By + C = 0"
     ],
-    answer: 2
+    "answer": 2
   },
   {
-    question: "Given r(t)=⟨3t²,cos(t),e²ᵗ⟩, what is the derivative, r′(t)?",
-    options: [
-      "⟨6t,−sin(t),2e²ᵗ⟩",
-      "⟨3t,−sin(t),e²ᵗ⟩",
-      "⟨6t,sin(t),2e²ᵗ⟩",
-      "⟨t³,−sin(t),e²ᵗ/2⟩"
+    "question": "A parabola is the locus of points that are:",
+    "options": [
+      "Equidistant from a fixed point and a fixed line",
+      "The sum of distances to two points is constant",
+      "The difference of distances to two points is constant",
+      "At a constant distance from a fixed point"
     ],
-    answer: 0
+    "answer": 0
   },
   {
-    question: "If the position vector of a particle is given by r(t)=(t³−2t)i+(4t+1)j−5tk, what is the velocity vector, v(t)?",
-    options: [
-      "(3t²−2)i+4j−5k",
-      "(3t²−2)i−4j+5k",
-      "(t³−2t)i+(4t+1)j",
-      "(3t²)i+4j−5k"
+    "question": "For the parabola y² = 12x, the focus is at:",
+    "options": [
+      "(3, 0)",
+      "(0, 3)",
+      "(-3, 0)",
+      "(0, -3)"
     ],
-    answer: 0
+    "answer": 0
   },
   {
-    question: "For the position vector in the previous question, what is the acceleration vector, a(t)?",
-    options: ["6ti", "6ti+4j", "6ti−5k", "6ti+0j+0k"],
-    answer: 0
-  },
-  {
-    question: "The limit of a vector-valued function is continuous if the limits of its component functions exist.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "Given r(t)=⟨(t−2)/(t²−4),sin(πt),ln(t)⟩, what is the limit as t→2?",
-    options: [
-      "⟨4,0,ln(2)⟩",
-      "⟨4,1,ln(2)⟩",
-      "⟨2,0,ln(2)⟩",
-      "⟨4,0,2⟩"
+    "question": "The directrix of the parabola y² = -12x is:",
+    "options": [
+      "x = 3",
+      "x = -3",
+      "y = 3",
+      "y = -3"
     ],
-    answer: 0
+    "answer": 0
   },
   {
-    question: "The length of the instantaneous velocity vector ∣v(t)∣ is also known as the:",
-    options: [
-      "Instantaneous acceleration",
-      "Instantaneous speed",
-      "Instantaneous position",
-      "Instantaneous jerk"
+    "question": "An ellipse is the locus of points where the __________ of distances to two fixed points (foci) is constant.",
+    "options": [
+      "sum",
+      "difference",
+      "product",
+      "ratio"
     ],
-    answer: 1
+    "answer": 0
   },
   {
-    question: "The derivative of the dot product of two vector-valued functions, d/dt (u(t)⋅v(t)), is:",
-    options: [
-      "u′(t)⋅v′(t)",
-      "u′(t)⋅v(t)+u(t)⋅v′(t)",
-      "u(t)⋅v(t)−u′(t)⋅v′(t)",
-      "u′(t)×v(t)+u(t)×v′(t)"
+    "question": "For the ellipse x²/25 + y²/9 = 1, the length of the semi-major axis is:",
+    "options": [
+      "3",
+      "5",
+      "4",
+      "6"
     ],
-    answer: 1
+    "answer": 1
   },
   {
-    question: "What is the derivative of the cross product of two vector-valued functions, d/dt (u(t)×v(t))?",
-    options: [
-      "u′(t)⋅v(t)+u(t)⋅v′(t)",
-      "u′(t)×v(t)+u(t)×v′(t)",
-      "u′(t)×v′(t)",
-      "u(t)×v(t)"
+    "question": "A hyperbola is the locus of points where the __________ of distances to two fixed points (foci) is constant.",
+    "options": [
+      "sum",
+      "difference",
+      "product",
+      "ratio"
     ],
-    answer: 1
+    "answer": 1
   },
   {
-    question: "If f(t)=t² and r(t)=⟨cos(t),sin(t)⟩, what is d/dt (f(t)r(t))?",
-    options: [
-      "⟨−t²sin(t),t²cos(t)⟩",
-      "⟨2tcos(t),2tsin(t)⟩",
-      "⟨2tcos(t)−t²sin(t),2tsin(t)+t²cos(t)⟩",
-      "⟨−2tsin(t),2tcos(t)⟩"
+    "question": "A quantity that has both magnitude and direction is called a:",
+    "options": [
+      "Scalar",
+      "Vector",
+      "Tensor",
+      "Unit"
     ],
-    answer: 2
+    "answer": 1
   },
   {
-    question: "The vector differential operator ∇ is defined as:",
-    options: [
-      "∂/∂x i + ∂/∂y j + ∂/∂z k",
-      "xi + yj + zk",
-      "∂/∂x + ∂/∂y + ∂/∂z",
-      "∂²/∂x² + ∂²/∂y² + ∂²/∂z²"
+    "question": "The magnitude of the vector a = (3, -4) is:",
+    "options": [
+      "7",
+      "1",
+      "5",
+      "12"
     ],
-    answer: 0
+    "answer": 2
   },
   {
-    question: "If a scalar function is ϕ(x,y,z)=x²y+yz³, what is its gradient, ∇ϕ?",
-    options: [
-      "2x + z³",
-      "2xyi + (x² + z³)j + 3yz²k",
-      "2xyi + yz³j + yz²k",
-      "2xi + yj + 3zk"
+    "question": "Two vectors are equal if they have the same:",
+    "options": [
+      "Magnitude only",
+      "Direction only",
+      "Both magnitude and direction",
+      "Initial point"
     ],
-    answer: 1
+    "answer": 2
   },
   {
-    question: "Given the vector field F(x,y,z)=y²i + 2zj + x³k, what is the divergence, ∇⋅F?",
-    options: ["0", "0", "0", "0"],
-    answer: 0
-  },
-  {
-    question: "For the vector field F(x,y,z)=y²i + 2zj + x³k, what is the curl, ∇×F?",
-    options: [
-      "−2j + 2yk",
-      "−2i − 3x²j + 2yk",
-      "2i − 3x²j + 2yk",
-      "3x²i − 2j"
+    "question": "For vectors a = (2, 1) and b = (3, -2), the resultant a + b is:",
+    "options": [
+      "(5, -1)",
+      "(-1, 3)",
+      "(6, -2)",
+      "(5, 3)"
     ],
-    answer: 1
+    "answer": 0
   },
   {
-    question: "What is the value of the line integral ∫C F⋅dr for F=⟨y²,−x²⟩ and C is the circle x² + y² = 1?",
-    options: ["0", "π", "−π", "2π"],
-    answer: 2
-  },
-  {
-    question: "The double integral ∬A dxdy calculates the:",
-    options: [
-      "Volume of a solid",
-      "Area of a region A",
-      "Length of a curve",
-      "Surface area of a solid"
+    "question": "A vector with magnitude zero is called the:",
+    "options": [
+      "Unit vector",
+      "Position vector",
+      "Null vector",
+      "Negative vector"
     ],
-    answer: 1
+    "answer": 2
   },
   {
-    question: "Evaluate the double integral ∬A (x+2y)dA where A is the rectangle 0≤x≤1 and 0≤y≤2.",
-    options: ["3", "5", "7", "9"],
-    answer: 1
-  },
-  {
-    question: "The triple integral ∭V dxdydz calculates the:",
-    options: [
-      "Surface area",
-      "Perimeter",
-      "Volume of a solid V",
-      "Area of a region"
+    "question": "The unit vector in the direction of a = (3, -4) is:",
+    "options": [
+      "(3, -4)",
+      "(1, 1)",
+      "(3/5, -4/5)",
+      "(5, 5)"
     ],
-    
-    answer: 2
+    "answer": 2
   },
   {
-    question: "Evaluate the triple integral ∭V (x)dV where V is the box defined by 0≤x≤2, 0≤y≤1, and 0≤z≤1.",
-    options: ["1", "2", "3", "4"],
-    answer: 1
-  },
-  {
-    question: "The Divergence Theorem relates a surface integral to a:",
-    options: [
-      "Line integral",
-      "Double integral",
-      "Volume integral",
-      "Single integral"
+    "question": "A matrix is a:",
+    "options": [
+      "Set of numbers",
+      "Rectangular array of numbers",
+      "Solution to equations",
+      "Type of vector"
     ],
-    answer: 2
+    "answer": 1
   },
   {
-    question: "What is the divergence of the vector field F(x,y,z)=x²î + xyĵ + zk̂?",
-    options: [
-      "2x + x + 1",
-      "2x + y + 1",
-      "x² + xy + z",
-      "2x + x + 1"
+    "question": "A matrix with an equal number of rows and columns is called a:",
+    "options": [
+      "Row matrix",
+      "Column matrix",
+      "Square matrix",
+      "Diagonal matrix"
     ],
-    answer: 1
+    "answer": 2
   },
   {
-    question: "Given F(x,y,z)=x²î + xyĵ + zk̂ and a cube of side length 1 in the first octant, what is the value of the volume integral ∭V div(F)dV?",
-    options: ["1", "2", "3", "4"],
-    answer: 1
-  },
-  {
-    question: "What is the Laplace transform of f(t)=t²?",
-    options: ["1/s²", "2/s³", "1/s³", "2/s²"],
-    answer: 1
-  },
-  {
-    question: "What is the Laplace transform of f(t)=sin(4t)?",
-    options: [
-      "s/(s² + 16)",
-      "4/(s² + 16)",
-      "s/(s² - 16)",
-      "1/(s² + 16)"
+    "question": "The matrix [1 0; 0 1] is an example of a(n):",
+    "options": [
+      "Identity matrix",
+      "Zero matrix",
+      "Scalar matrix",
+      "Diagonal matrix"
     ],
-    answer: 1
+    "answer": 0
   },
   {
-    question: "The First Shifting Theorem states that L[eᵃᵗ f(t)] is equal to:",
-    options: [
-      "F(s + a)",
-      "F(s - a)",
-      "F(s)/s",
-      "F(s)⋅F(a)"
+    "question": "For matrices to be added or subtracted, they must be:",
+    "options": [
+      "Square",
+      "Of the same order",
+      "Invertible",
+      "Symmetric"
     ],
-    answer: 1
+    "answer": 1
   },
   {
-    question: "What is the Laplace transform of e³ᵗ cos(2t)?",
-    options: [
-      "(s - 3)/((s - 3)² + 4)",
-      "(s + 3)/((s + 3)² + 4)",
-      "2/((s - 3)² + 4)",
-      "s/((s - 3)² + 4)"
+    "question": "Matrix multiplication is:",
+    "options": [
+      "Always commutative (AB = BA)",
+      "Never commutative",
+      "Not necessarily commutative",
+      "Only commutative for square matrices"
     ],
-    answer: 0
+    "answer": 2
   },
   {
-    question: "What is the Laplace transform of te⁻²ᵗ?",
-    options: [
-      "1/(s + 2)²",
-      "1/(s - 2)²",
-      "s/(s + 2)²",
-      "s/(s - 2)²"
+    "question": "The determinant of the matrix A = [4 3; 2 2] is:",
+    "options": [
+      "2",
+      "14",
+      "8",
+      "6"
     ],
-    answer: 0
+    "answer": 0
   },
   {
-    question: "The Laplace transform of f′(t) is given by:",
-    options: [
-      "sF(s) - f(0)",
-      "sF(s) + f(0)",
-      "F(s)/s",
-      "sF(s)"
+    "question": "A matrix whose determinant is zero is called:",
+    "options": [
+      "Identity",
+      "Singular",
+      "Non-singular",
+      "Symmetric"
     ],
-    answer: 0
+    "answer": 1
   },
   {
-    question: "The Laplace transform of f′′(t) is given by:",
-    options: [
-      "s²F(s) - sf(0) - f′(0)",
-      "s²F(s)",
-      "s²F(s) - f(0)",
-      "s²F(s) + sf(0) + f′(0)"
+    "question": "The method that uses determinants to solve a system of linear equations is called:",
+    "options": [
+      "Gauss elimination",
+      "Matrix inversion",
+      "Cramer's rule",
+      "Gaussian Jordan"
     ],
-    answer: 0
+    "answer": 2
   },
   {
-    question: "Solve the differential equation y′ − 2y = eᵗ with y(0)=1 using Laplace transforms. What is Y(s)?",
-    options: [
-      "1/(s - 1) + 1/(s - 2)",
-      "1/((s - 1)(s - 2)) + 1/(s - 2)",
-      "1/(s - 1) - 1/(s - 2)",
-      "1/(s - 1) + 1/(s - 2)²"
+    "question": "The process of solving a system by transforming the augmented matrix into reduced row-echelon form is:",
+    "options": [
+      "Cramer's rule",
+      "Gauss-Jordan elimination",
+      "Matrix addition",
+      "Finding the adjoint"
     ],
-    answer: 1
+    "answer": 1
   },
   {
-    question: "A vector-valued function can be used to describe the path of a particle in space.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "If r(t)=⟨t²,3t,sin(t)⟩, what is the derivative, r′(t)?",
-    options: [
-      "⟨2t,3,cos(t)⟩",
-      "⟨2t,3,−cos(t)⟩",
-      "⟨t,3,cos(t)⟩",
-      "⟨2t,3,sin(t)⟩"
+    "question": "The point (-2, 3) lies in which quadrant?",
+    "options": [
+      "I",
+      "II",
+      "III",
+      "IV"
     ],
-    answer: 0
+    "answer": 1
   },
   {
-    question: "If u(t)=⟨t,t²,t³⟩ and v(t)=⟨1,2t,3t²⟩, what is u(t)⋅v(t)?",
-    options: [
-      "t + 2t³ + 3t⁵",
-      "t + 2t² + 3t³",
-      "t + 2t³ + 3t⁴",
-      "t + 2t³ + 3t⁴"
+    "question": "The distance between points (1, 2) and (4, 6) is:",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
     ],
-    answer: 0
+    "answer": 0
   },
   {
-    question: "For the functions in the previous question, what is d/dt (u(t)⋅v(t))?",
-    options: [
-      "1 + 6t² + 12t³",
-      "1 + 6t² + 12t⁴",
-      "1 + 2t² + 3t³",
-      "1 + 6t² + 12t³"
+    "question": "The midpoint between ( -3, 5) and (7, -1) is:",
+    "options": [
+      "(2, 2)",
+      "(4, 4)",
+      "(5, 2)",
+      "(2, 4)"
     ],
-    answer: 0
+    "answer": 0
   },
   {
-    question: "A scalar function is a function that maps vectors to real numbers.",
-    options: ["True", "False"],
-    answer: 0
+    "question": "The gradient of the line joining (1, 1) and (4, 13) is:",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "answer": 1
   },
   {
-    question: "Given ϕ(x,y,z)=xy + yz + zx, what is ∇ϕ?",
-    options: [
-      "⟨y + z, x + z, y + x⟩",
-      "⟨x + y, y + z, z + x⟩",
-      "x + y + z",
+    "question": "What is the distance between the points (3, -2) and (-1, 5)?",
+    "options": [
+      "5",
+      "√65",
+      "8",
+      "7"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The point that divides the line joining (2, 3) and (5, 7) internally in the ratio 1:2 is:",
+    "options": [
+      "(3, 13/3)",
+      "(4, 5)",
+      "(3, 4)",
+      "(4, 17/3)"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The area of the triangle with vertices (0, 0), (4, 0), and (0, 3) is:",
+    "options": [
+      "6",
+      "12",
+      "7.5",
+      "5"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The points (1, 2), (3, 4), and (5, 6) are:",
+    "options": [
+      "Collinear",
+      "Not collinear",
+      "Vertices of a right triangle",
+      "Vertices of an equilateral triangle"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The gradient of the line passing through (4, 1) and (6, 5) is:",
+    "options": [
+      "2",
+      "3",
+      "4",
       "1"
     ],
-    answer: 0
+    "answer": 0
   },
   {
-    question: "If a vector field F=⟨x,y,z⟩, what is its divergence, ∇⋅F?",
-    options: ["0", "1", "2", "3"],
-    answer: 3
-  },
-  {
-    question: "For the vector field F=⟨x,y,z⟩, what is the curl, ∇×F?",
-    options: [
-      "⟨0,0,0⟩",
-      "⟨1,1,1⟩",
-      "⟨x,y,z⟩",
-      "⟨x,y,z⟩"
+    "question": "The angle between two lines with slopes m1 = 1 and m2 = -1 is:",
+    "options": [
+      "0°",
+      "45°",
+      "90°",
+      "180°"
     ],
-    answer: 0
+    "answer": 2
   },
   {
-    question: "The double integral ∬A f(x,y)dA for a general region A is evaluated using:",
-    options: [
-      "Fubini's Theorem",
-      "Stokes' Theorem",
-      "Green's Theorem",
-      "Divergence Theorem"
+    "question": "If two lines are perpendicular and one has slope 2, the other has slope:",
+    "options": [
+      "2",
+      "-2",
+      "1/2",
+      "-1/2"
     ],
-    answer: 0
+    "answer": 3
   },
   {
-    question: "Evaluate ∬A x²y dA where A is the rectangle 0≤x≤2 and 0≤y≤3.",
-    options: ["12", "18", "24", "36"],
-    answer: 1
-  },
-  {
-    question: "The volume of a solid V is given by the triple integral ∭V dV.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "What is the volume of the box defined by 1≤x≤3, 2≤y≤4, and 0≤z≤2?",
-    options: ["8", "16", "24", "32"],
-    answer: 1
-  },
-  {
-    question: "The Divergence Theorem, also known as Gauss's Theorem, relates the surface integral of a vector field to the volume integral of its divergence.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "What is the Laplace transform of f(t)=t?",
-    options: ["1/s", "1/s²", "s", "s²"],
-    answer: 1
-  },
-  {
-    question: "What is the Laplace transform of f(t)=t² + t + 1?",
-    options: [
-      "2/s³ + 1/s² + 1/s",
-      "2/s³ + 1/s² + s",
-      "1/s³ + 1/s² + 1/s",
-      "2/s³ + 1/s² + 1"
+    "question": "The polar coordinates (5, 30°) correspond to Cartesian coordinates:",
+    "options": [
+      "(5√3/2, 5/2)",
+      "(5/2, 5√3/2)",
+      "(5, 5)",
+      "(0, 5)"
     ],
-    answer: 0
+    "answer": 0
   },
   {
-    question: "What is the inverse Laplace transform of F(s)=1/(s - 5)?",
-    options: ["e⁵ᵗ", "e⁻⁵ᵗ", "cos(5t)", "sin(5t)"],
-    answer: 0
-  },
-  {
-    question: "What is the Laplace transform of a piecewise function?",
-    options: [
-      "It is not possible to find the Laplace transform of a piecewise function.",
-      "It is the sum of integrals over each interval where the function is defined.",
-      "It is the product of integrals over each interval.",
-      "It is the average of the integrals over each interval."
+    "question": "The Cartesian point (0, -4) in polar coordinates is:",
+    "options": [
+      "(4, 90°)",
+      "(4, 270°)",
+      "(4, 0°)",
+      "(4, 180°)"
     ],
-    answer: 1
+    "answer": 1
   },
   {
-    question: "What is the inverse Laplace transform of F(s)=(s + 1)/(s² + 2s + 5)?",
-    options: [
-      "e⁻ᵗ cos(2t)",
-      "e⁻ᵗ sin(2t)",
-      "e⁻²ᵗ cos(t)",
-      "e⁻ᵗ cos(4t)"
+    "question": "The polar equation r = 4 represents:",
+    "options": [
+      "A circle of radius 4",
+      "A line",
+      "A point",
+      "A parabola"
     ],
-    answer: 0
+    "answer": 0
   },
   {
-    question: "The Laplace transform of tⁿ is given by n!/sⁿ⁺¹.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "What is the Laplace transform of t cos(t)?",
-    options: [
-      "(s² - 1)/(s² + 1)²",
-      "(s² + 1)/(s² + 1)²",
-      "2s/(s² + 1)²",
-      "1/(s² + 1)²"
+    "question": "The parametric equations x = t, y = t^2 represent:",
+    "options": [
+      "A line",
+      "A circle",
+      "A parabola",
+      "An ellipse"
     ],
-    answer: 0
+    "answer": 2
   },
   {
-    question: "What is the Laplace transform of the solution to y′ − y = te⁻ᵗ with y(0)=0?",
-    options: [
-      "Y(s) = 1/((s - 1)(s + 1)²)",
-      "Y(s) = 1/((s + 1)(s - 1)²)",
-      "Y(s) = s/((s - 1)(s + 1)²)",
-      "Y(s) = s/((s + 1)(s - 1)²)"
+    "question": "The Cartesian equation for x = 2cos t, y = 2sin t is:",
+    "options": [
+      "x^2 + y^2 = 4",
+      "x^2 - y^2 = 4",
+      "y = x^2",
+      "x = y^2"
     ],
-    answer: 0
+    "answer": 0
   },
   {
-    question: "What is the inverse Laplace transform of Y(s)=1/((s - 1)(s + 1)²)?",
-    options: [
-      "¼ eᵗ - ¼ e⁻ᵗ - ½ te⁻ᵗ",
-      "¼ eᵗ + ¼ e⁻ᵗ + ½ te⁻ᵗ",
-      "eᵗ - e⁻ᵗ - te⁻ᵗ",
-      "¼ eᵗ - ¼ e⁻ᵗ + ½ te⁻ᵗ"
+    "question": "The equation of the line with slope -2 and y-intercept 3 is:",
+    "options": [
+      "y = 2x + 3",
+      "y = -2x + 3",
+      "2x + y = 3",
+      "x - 2y = 3"
     ],
-    answer: 0
+    "answer": 1
   },
   {
-    question: "What is the Laplace transform of eᵗ (t - 1)²?",
-    options: [
-      "2/(s - 1)³ - 2/(s - 1)² + 1/(s - 1)",
-      "2/s³ - 2/s² + 1/s",
-      "2/(s + 1)³ - 2/(s + 1)² + 1/(s + 1)",
-      "2/(s - 1)³ + 2/(s - 1)² + 1/(s - 1)"
+    "question": "The equation of the line passing through (1, -1) and (3, 5) is:",
+    "options": [
+      "y = 3x - 4",
+      "y = 2x - 3",
+      "y = 4x - 5",
+      "y = 3x + 2"
     ],
-    answer: 0
+    "answer": 0
   },
   {
-    question: "The Bessel function of the first kind of order n, Jₙ(x), is defined as:",
-    options: [
-      "A Fourier series",
-      "A power series",
-      "A Maclaurin series",
-      "A Taylor series"
+    "question": "The intercept form of the line that cuts the x-axis at 3 and the y-axis at 4 is:",
+    "options": [
+      "x/3 + y/4 = 1",
+      "4x + 3y = 12",
+      "3x + 4y = 12",
+      "x/4 + y/3 = 1"
     ],
-    answer: 1
+    "answer": 0
   },
   {
-    question: "The Bessel function of order 1/2 is related to which trigonometric function?",
-    options: ["sin(x)", "cos(x)", "tan(x)", "sec(x)"],
-    answer: 0
-  },
-  {
-    question: "What is the value of Γ(1/2)?",
-    options: ["π", "√π", "1", "0"],
-    answer: 1
-  },
-  {
-    question: "The Laplace transform of a function is a transformation from the time domain t to the:",
-    options: [
-      "Frequency domain w",
-      "s-domain",
-      "z-domain",
-      "x-domain"
+    "question": "The distance from the point (2, 1) to the line 3x + 4y - 5 = 0 is:",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
     ],
-    answer: 1
+    "answer": 0
   },
   {
-    question: "A vector function is continuous at a point t if its component functions are continuous at that point.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "If r(t)=⟨sin(t),cos(t),t⟩, what is the instantaneous speed ∣v(t)∣?",
-    options: [
-      "⟨cos(t),−sin(t),1⟩",
-      "√(cos²(t) + sin²(t) + 1)",
-      "√2",
-      "1"
+    "question": "The gradient of the tangent to the curve y = x^2 at x = 2 is:",
+    "options": [
+      "2",
+      "4",
+      "1",
+      "0"
     ],
-    answer: 2
+    "answer": 1
   },
   {
-    question: "The gradient of a scalar function ϕ is a:",
-    options: ["Scalar", "Vector", "Matrix", "Constant"],
-    answer: 1
-  },
-  {
-    question: "The divergence of a vector field F is a:",
-    options: ["Scalar", "Vector", "Matrix", "Constant"],
-    answer: 0
-  },
-  {
-    question: "The curl of a vector field F is a:",
-    options: ["Scalar", "Vector", "Matrix", "Constant"],
-    answer: 1
-  },
-  {
-    question: "Evaluate the double integral ∬R (x - y)dA where R is the region bounded by y = x² and y = x.",
-    options: ["1/12", "1/6", "1/4", "1/3"],
-    answer: 0
-  },
-  {
-    question: "What is the value of the surface integral ∬S F⋅dS for the vector field F = xyî + yzĵ + zxk̂ over the surface of the cube with side length 1 in the first octant?",
-    options: ["1", "3/2", "2", "3"],
-    answer: 1
-  },
-  {
-    question: "Given F = xyî + yzĵ + zxk̂ and a cube with side length 1 in the first octant, what is the value of the volume integral ∭V div(F)dV?",
-    options: ["1", "3/2", "2", "3"],
-    answer: 1
-  },
-  {
-    question: "What is the Laplace transform of f(t) = e²ᵗ + t³?",
-    options: [
-      "1/(s - 2) + 6/s⁴",
-      "1/(s + 2) + 6/s⁴",
-      "1/(s - 2) + 3/s⁴",
-      "1/(s - 2) + 6/s³"
+    "question": "The equation of the tangent to the curve y = x^2 at the point (2, 4) is:",
+    "options": [
+      "y = 4x - 4",
+      "y = 2x - 4",
+      "y = 4x + 4",
+      "y = 2x + 4"
     ],
-    answer: 0
+    "answer": 0
   },
   {
-    question: "Find the inverse Laplace transform of F(s) = s/(s² - 4).",
-    options: ["cos(2t)", "sin(2t)", "cosh(2t)", "sinh(2t)"],
-    answer: 2
-  },
-  {
-    question: "Find the inverse Laplace transform of F(s) = 2/(s² - 4).",
-    options: ["cos(2t)", "sin(2t)", "cosh(2t)", "sinh(2t)"],
-    answer: 3
-  },
-  {
-    question: "What is the Laplace transform of the solution to y′′ + y = e⁻ᵗ with y(0)=0 and y′(0)=0?",
-    options: [
-      "Y(s) = 1/((s² + 1)(s - 1))",
-      "Y(s) = 1/((s² + 1)(s + 1))",
-      "Y(s) = s/((s² + 1)(s + 1))",
-      "Y(s) = s/((s² + 1)(s - 1))"
+    "question": "The center of the circle x^2 + y^2 - 6x + 4y - 12 = 0 is:",
+    "options": [
+      "(3, -2)",
+      "(-3, 2)",
+      "(3, 2)",
+      "(-3, -2)"
     ],
-    answer: 1
+    "answer": 0
   },
   {
-    question: "What is the partial fraction decomposition of Y(s) = 1/((s² + 1)(s + 1))?",
-    options: [
-      "A/(s + 1) + (Bs + C)/(s² + 1)",
-      "A/(s + 1) + B/(s² + 1)",
-      "A/(s + 1) + B/(s + 1)",
-      "s/(s² + 1) + 1/(s + 1)"
+    "question": "The radius of the circle x^2 + y^2 + 8x - 6y = 0 is:",
+    "options": [
+      "5",
+      "10",
+      "25",
+      "100"
     ],
-    answer: 0
+    "answer": 0
   },
   {
-    question: "In the partial fraction decomposition of Y(s) = 1/((s² + 1)(s + 1)), what is the value of A?",
-    options: ["1/2", "−1/2", "1", "−1"],
-    answer: 0
-  },
-  {
-    question: "A vector-valued function is of the form X(t)=x(t)i + y(t)j + z(t)k, where x(t),y(t),z(t) are real-valued functions of a parameter t.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "A space curve C is traced out by a vector-valued function r(t).",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "The definition of the derivative of a vector-valued function is given as a limit.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "What is the derivative of r(t)=⟨cos(2t),sin(2t),t²⟩?",
-    options: [
-      "⟨−sin(2t),cos(2t),2t⟩",
-      "⟨−2sin(2t),2cos(2t),2t⟩",
-      "⟨2sin(2t),2cos(2t),2t⟩",
-      "⟨−sin(t),cos(t),2t⟩"
+    "question": "The focus of the parabola y^2 = 16x is:",
+    "options": [
+      "(4, 0)",
+      "(0, 4)",
+      "(-4, 0)",
+      "(0, -4)"
     ],
-    answer: 1
+    "answer": 0
   },
   {
-    question: "If r(t)=⟨eᵗ,e⁻ᵗ⟩ and s(t)=⟨t,t²⟩, what is the derivative of r(t)⋅s(t)?",
-    options: [
-      "eᵗ + 2te⁻ᵗ",
-      "eᵗ - 2te⁻ᵗ",
-      "eᵗ(t + 1) - e⁻ᵗ(t² - 2t)",
-      "eᵗ(t + 1) + e⁻ᵗ(t² - 2t)"
+    "question": "The directrix of the parabola x^2 = -12y is:",
+    "options": [
+      "y = 3",
+      "y = -3",
+      "x = 3",
+      "x = -3"
     ],
-    answer: 2
+    "answer": 0
   },
   {
-    question: "The gradient of a scalar field is a vector field that points in the direction of the greatest rate of increase of the scalar field.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "What is the divergence of the vector field F=⟨x²y,y²z,z²x⟩?",
-    options: [
-      "2xy + 2yz + 2zx",
-      "2xy + 2yz + z²",
-      "2x + 2y + 2z",
-      "y² + z² + x²"
-    ],
-    answer: 0
-  },
-  {
-    question: "What is the curl of the vector field F=⟨x,y,z⟩?",
-    options: [
-      "⟨0,0,0⟩",
-      "⟨1,1,1⟩",
-      "⟨x,y,z⟩",
-      "⟨1,1,1⟩"
-    ],
-    answer: 0
-  },
-  {
-    question: "Evaluate the double integral ∫₀¹ ∫₀² (x² + y)dxdy.",
-    options: ["10/3", "10", "10/2", "10/4"],
-    answer: 0
-  },
-  {
-    question: "Evaluate the triple integral ∭V xyzdV where V is the box defined by 0≤x≤1, 0≤y≤1, and 0≤z≤1.",
-    options: ["1/2", "1/4", "1/8", "1"],
-    answer: 2
-  },
-  {
-    question: "The Divergence Theorem states ∭V div(F)dV = ∬S F⋅dS.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "What is the value of the surface integral over the cube in the Divergence Theorem example in the MTH 222 SOLUTION-2.pdf?",
-    options: ["8", "4", "2", "0"],
-    answer: 1
-  },
-  {
-    question: "What is the value of the volume integral of the divergence of F for the Divergence Theorem example in the MTH 222 SOLUTION-2.pdf?",
-    options: ["8", "4", "2", "0"],
-    answer: 1
-  },
-  {
-    question: "What is the Laplace transform of the function f(t)=cosh(at)?",
-    options: [
-      "s/(s² - a²)",
-      "a/(s² - a²)",
-      "s/(s² + a²)",
-      "a/(s² + a²)"
-    ],
-    answer: 0
-  },
-  {
-    question: "What is the Laplace transform of the function f(t)=sinh(at)?",
-    options: [
-      "s/(s² - a²)",
-      "a/(s² - a²)",
-      "s/(s² + a²)",
-      "a/(s² + a²)"
-    ],
-    answer: 1
-  },
-  {
-    question: "Find the inverse Laplace transform of F(s)=1/(s(s² + 1)).",
-    options: [
-      "1 + cos(t)",
-      "1 - cos(t)",
-      "sin(t) + cos(t)",
-      "sin(t) - cos(t)"
-    ],
-    answer: 1
-  },
-  {
-    question: "What is the Laplace transform of t sin(3t)?",
-    options: [
-      "6s/(s² + 9)²",
-      "3s/(s² + 9)²",
-      "(s² - 9)/(s² + 9)²",
-      "(s² + 9)/(s² + 9)²"
-    ],
-    answer: 0
-  },
-  {
-    question: "The Laplace transform of f(t)=t² cos(3t) requires a second derivative of the Laplace transform of cos(3t).",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "What is the Laplace transform of y′(t) if y(0)=0?",
-    options: [
-      "sY(s)",
-      "sY(s) - y(0)",
-      "sY(s) + y(0)",
-      "Y(s)/s"
-    ],
-    answer: 0
-  },
-  {
-    question: "The Bessel function Jₙ(x) is a solution to the Bessel differential equation.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "The derivative of the cross product of two vector-valued functions, d/dt (u(t)×v(t)), is given by the product rule.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "The velocity of a particle is the derivative of its position vector with respect to time.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "What is the limit of r(t)=⟨t, sin(t)/t⟩ as t→0?",
-    options: ["⟨0,1⟩", "⟨0,0⟩", "⟨1,1⟩", "⟨1,0⟩"],
-    answer: 0
-  },
-  {
-    question: "What is the equation for the surface of a paraboloid in cylindrical coordinates?",
-    options: ["z = r", "z = r²", "z = θ", "r = z"],
-    answer: 1
-  },
-  {
-    question: "A space curve can be parameterized by a single variable, t.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "The gradient of the function ϕ(x,y,z)=x² + y² + z² is:",
-    options: [
-      "2x + 2y + 2z",
-      "⟨2x,2y,2z⟩",
-      "2xi + 2yj + 2zk",
-      "Both B and C"
-    ],
-    answer: 3
-  },
-  {
-    question: "The divergence of the vector field F=⟨x²,y²,z²⟩ is:",
-    options: [
-      "x² + y² + z²",
-      "2x + 2y + 2z",
-      "⟨2x,2y,2z⟩",
-      "2xi + 2yj + 2zk"
-    ],
-    answer: 1
-  },
-  {
-    question: "The curl of the vector field F=⟨x,y,z⟩ is:",
-    options: [
-      "⟨0,0,0⟩",
-      "0",
-      "⟨1,1,1⟩",
+    "question": "For the ellipse x^2/16 + y^2/9 = 1, the length of the major axis is:",
+    "options": [
+      "6",
+      "8",
+      "4",
       "3"
     ],
-    answer: 0
+    "answer": 1
   },
   {
-    question: "Evaluate the double integral ∫₀¹ ∫_y^1 x dxdy.",
-    options: ["1/6", "1/3", "1/2", "1"],
-    answer: 0
-  },
-  {
-    question: "Evaluate the triple integral of xyz over the unit cube.",
-    options: ["1/8", "1/4", "1/2", "1"],
-    answer: 0
-  },
-  {
-    question: "What is the volume of the region bounded by the planes x=0,y=0,z=0,x=1,y=2,z=3?",
-    options: ["1", "2", "3", "6"],
-    answer: 3
-  },
-  {
-    question: "Given the vector field F(x,y,z)=xî + yĵ + zk̂ and a sphere of radius 1 centered at the origin, what is the value of the volume integral ∭V div(F)dV?",
-    options: ["4π", "3π", "2π", "π"],
-    answer: 0
-  },
-  {
-    question: "What is the surface area of a sphere of radius 1?",
-    options: ["π", "2π", "3π", "4π"],
-    answer: 3
-  },
-  {
-    question: "What is the inverse Laplace transform of F(s)=1/(s² + a²)?",
-    options: [
-      "sin(at)",
-      "(1/a) sin(at)",
-      "cos(at)",
-      "(1/a) cos(at)"
+    "question": "The foci of the ellipse x^2/25 + y^2/16 = 1 are at:",
+    "options": [
+      "(±3, 0)",
+      "(0, ±3)",
+      "(±5, 0)",
+      "(0, ±5)"
     ],
-    answer: 1
+    "answer": 0
   },
   {
-    question: "Find the inverse Laplace transform of F(s)=1/(s² - 9).",
-    options: [
-      "(1/3) sinh(3t)",
-      "sinh(3t)",
-      "(1/3) sin(3t)",
-      "sin(3t)"
+    "question": "The equation of a hyperbola with foci (±5, 0) and vertices (±3, 0) is:",
+    "options": [
+      "x^2/9 - y^2/16 = 1",
+      "x^2/16 - y^2/9 = 1",
+      "y^2/9 - x^2/16 = 1",
+      "x^2/25 - y^2/16 = 1"
     ],
-    answer: 0
+    "answer": 0
   },
   {
-    question: "Find the inverse Laplace transform of F(s)=s/(s² - 9).",
-    options: [
-      "cosh(3t)",
-      "sinh(3t)",
-      "cos(3t)",
-      "sin(3t)"
+    "question": "The magnitude of the vector a = (6, 8) is:",
+    "options": [
+      "10",
+      "14",
+      "48",
+      "100"
     ],
-    answer: 0
+    "answer": 0
   },
   {
-    question: "What is the Laplace transform of y′′(t) with y(0)=1, y′(0)=2?",
-    options: [
-      "s²Y(s) - s - 2",
-      "s²Y(s) + s + 2",
-      "s²Y(s) - 1 - 2s",
-      "s²Y(s) + 1 + 2s"
+    "question": "If a = (2, 3) and b = (4, 1), then a - b is:",
+    "options": [
+      "(6, 4)",
+      "(-2, 2)",
+      "(2, -2)",
+      "(-2, -2)"
     ],
-    answer: 0
+    "answer": 1
   },
   {
-    question: "The Group B test question and answer.pdf contains a question on the Laplace transform of f(t)=t² - 2t + 1. What is the Laplace transform?",
-    options: [
-      "2/s³ - 2/s² + 1/s",
-      "2/s³ + 2/s² + 1/s",
-      "1/s³ - 2/s² + 1/s",
-      "2/s³ - 1/s² + 1/s"
+    "question": "The unit vector in the direction of (1, 1) is:",
+    "options": [
+      "(1, 1)",
+      "(0.5, 0.5)",
+      "(1/√2, 1/√2)",
+      "(2, 2)"
     ],
-    answer: 0
+    "answer": 2
   },
   {
-    question: "A vector field is a function that assigns a vector to each point in space.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "The gradient of a scalar function at a point is a vector that points in the direction of the steepest ascent of the function.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "What is the gradient of ϕ(x,y,z)=x² + y² + z²?",
-    options: [
-      "2xî + 2yĵ + 2zk̂",
-      "xî + yĵ + zk̂",
-      "2x + 2y + 2z",
-      "x² + y² + z²"
+    "question": "Two vectors are parallel if:",
+    "options": [
+      "Their dot product is zero",
+      "They have the same direction",
+      "One is a scalar multiple of the other",
+      "Both b and c"
     ],
-    answer: 0
+    "answer": 3
   },
   {
-    question: "If F=xyî + y²zĵ + xz²k̂, what is div(F)?",
-    options: [
-      "y + 2yz + z²",
-      "x + y² + z²",
-      "x + y + z",
-      "2xy + 2yz + 2zx"
+    "question": "The dot product of (2, 3) and (4, 5) is:",
+    "options": [
+      "10",
+      "23",
+      "22",
+      "40"
     ],
-    answer: 0
+    "answer": 2
   },
   {
-    question: "What is the curl of F=xyî + y²zĵ + xz²k̂?",
-    options: [
-      "⟨y², −z², x⟩",
-      "⟨x, y², z²⟩",
-      "⟨y², −z², x⟩",
-      "⟨0,0,0⟩"
+    "question": "A matrix with only one row is called a:",
+    "options": [
+      "Column matrix",
+      "Row matrix",
+      "Square matrix",
+      "Diagonal matrix"
     ],
-    answer: 0
+    "answer": 1
   },
   {
-    question: "Evaluate the double integral ∬R xy dA where R is the rectangle 0≤x≤2 and 1≤y≤3.",
-    options: ["4", "8", "12", "16"],
-    answer: 1
-  },
-  {
-    question: "Evaluate the triple integral ∭V (x + y)dV where V is the box defined by 0≤x≤1, 0≤y≤1, and 0≤z≤1.",
-    options: ["1/2", "1", "2", "3/2"],
-    answer: 1
-  },
-  {
-    question: "The Laplace transform of tⁿ is given by n!/sⁿ⁺¹.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "Find the Laplace transform of f(t)=t³ + t + 1.",
-    options: [
-      "6/s⁴ + 1/s² + s",
-      "6/s⁴ + 1/s² + 1/s",
-      "3/s⁴ + 1/s² + 1/s",
-      "6/s³ + 1/s² + 1/s"
+    "question": "The identity matrix of order 3 has:",
+    "options": [
+      "All elements 1",
+      "1s on the diagonal and 0s elsewhere",
+      "0s on the diagonal and 1s elsewhere",
+      "All elements 0"
     ],
-    answer: 1
+    "answer": 1
   },
   {
-    question: "What is the inverse Laplace transform of F(s)=1/(s² + 4s + 13)?",
-    options: [
-      "(1/3) e⁻²ᵗ sin(3t)",
-      "e⁻²ᵗ cos(3t)",
-      "(1/3) e⁻⁴ᵗ sin(3t)",
-      "e⁻⁴ᵗ cos(3t)"
+    "question": "If A = [1 2; 3 4] and B = [5 6; 7 8], then A + B is:",
+    "options": [
+      "[6 8; 10 12]",
+      "[5 12; 21 32]",
+      "[6 10; 8 12]",
+      "[1 5; 3 7]"
     ],
-    answer: 0
+    "answer": 0
   },
   {
-    question: "A space curve is a continuous map from a single scalar parameter to a three-dimensional vector.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "The derivative of a vector-valued function is another vector-valued function.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "What is the derivative of r(t)=⟨ln(t), t³, teᵗ⟩?",
-    options: [
-      "⟨1/t, 3t², eᵗ + teᵗ⟩",
-      "⟨t, 3t², eᵗ⟩",
-      "⟨1/t, t², eᵗ + t⟩",
-      "⟨1/t, 3t², teᵗ⟩"
+    "question": "The product of A = [1 2; 3 4] and B = [2 0; 1 2] is:",
+    "options": [
+      "[4 4; 10 8]",
+      "[2 0; 3 8]",
+      "[4 0; 10 16]",
+      "[3 2; 7 4]"
     ],
-    answer: 0
+    "answer": 0
   },
   {
-    question: "If ϕ(x,y,z)=x² + y² + z², what is the gradient of ϕ?",
-    options: [
-      "2x + 2y + 2z",
-      "⟨2x,2y,2z⟩",
-      "⟨x,y,z⟩",
-      "x² + y² + z²"
+    "question": "The transpose of the matrix [1 2 3; 4 5 6] is:",
+    "options": [
+      "[1 4; 2 5; 3 6]",
+      "[1 2 3; 4 5 6]",
+      "[1 3; 4 6]",
+      "[1 4 2; 5 3 6]"
     ],
-    answer: 1
+    "answer": 0
   },
   {
-    question: "What is the divergence of F=⟨x², xy, yz⟩?",
-    options: [
-      "2x + x + y",
-      "x + y + z",
-      "2x + x + y",
-      "2x + x + y"
+    "question": "The determinant of the matrix [3 1; 2 4] is:",
+    "options": [
+      "10",
+      "14",
+      "12",
+      "5"
     ],
-    answer: 0
+    "answer": 0
   },
   {
-    question: "Evaluate the double integral ∫₀¹ ∫₀¹ (x + y)dxdy.",
-    options: ["1/2", "1", "2", "1/4"],
-    answer: 1
-  },
-  {
-    question: "Evaluate the triple integral ∭V 1 dV over the region defined by 0≤x≤2, 0≤y≤2, 0≤z≤2.",
-    options: ["1", "4", "8", "16"],
-    answer: 2
-  },
-  {
-    question: "The Laplace transform of a derivative involves the initial conditions of the function.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "What is the Laplace transform of f(t)=cos(t) + eᵗ?",
-    options: [
-      "s/(s² + 1) + 1/(s - 1)",
-      "s/(s² + 1) + 1/(s + 1)",
-      "1/(s² + 1) + 1/(s - 1)",
-      "s/(s² - 1) + 1/(s - 1)"
+    "question": "The matrix [2 4; 1 2] is singular because its determinant is:",
+    "options": [
+      "0",
+      "4",
+      "8",
+      "2"
     ],
-    answer: 0
+    "answer": 0
   },
   {
-    question: "What is the inverse Laplace transform of F(s)=(s + 1)/(s² + 1)?",
-    options: [
-      "cos(t) + sin(t)",
-      "sin(t) + cos(t)",
-      "cos(t) + sin(t)",
-      "cos(t) + sin(t)"
+    "question": "The adjoint of the matrix [a b; c d] is:",
+    "options": [
+      "[d -b; -c a]",
+      "[a c; b d]",
+      "[d b; c a]",
+      "[a -b; -c d]"
     ],
-    answer: 0
+    "answer": 0
   },
   {
-    question: "The Bessel function of order 1/2, J₁/₂(x), can be expressed in terms of sin(x) and a scaling factor.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "What is the general solution to the Bessel differential equation of order n?",
-    options: [
-      "C₁ Jₙ(x) + C₂ Yₙ(x)",
-      "C₁ cos(x) + C₂ sin(x)",
-      "C₁ eᵃˣ + C₂ eᵇˣ",
-      "C₁ xⁿ + C₂ x⁻ⁿ"
+    "question": "The inverse of the matrix [2 0; 0 2] is:",
+    "options": [
+      "[0.5 0; 0 0.5]",
+      "[2 0; 0 2]",
+      "[1 0; 0 1]",
+      "[0 2; 2 0]"
     ],
-    answer: 0
+    "answer": 0
   },
   {
-    question: "The First Shifting Theorem for Laplace transforms is a useful tool for solving certain types of differential equations.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "What is the inverse Laplace transform of F(s)=1/(s² + 2s + 2)?",
-    options: [
-      "e⁻ᵗ cos(t)",
-      "e⁻ᵗ sin(t)",
-      "e⁻²ᵗ cos(t)",
-      "e⁻²ᵗ sin(t)"
+    "question": "To solve a system of equations using Cramer's rule, the determinant of the coefficient matrix must be:",
+    "options": [
+      "Zero",
+      "Non-zero",
+      "Positive",
+      "Negative"
     ],
-    answer: 1
+    "answer": 1
   },
   {
-    question: "The Group B test question and answer.pdf contains a question about the Laplace transform of a system of differential equations.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "The document proves that the Laplace transform of tⁿ f(t) is (−1)ⁿ dⁿ/dsⁿ L[f(t)].",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "What is the Laplace transform of t² cos(3t)?",
-    options: [
-      "2s(s² - 27)/(s² + 9)³",
-      "2s(s² + 27)/(s² + 9)³",
-      "(s² - 27)/(s² + 9)³",
-      "(2s³ + 54s)/(s² + 9)³"
+    "question": "The system of equations 2x + 3y = 5 and 4x + 6y = 10 has:",
+    "options": [
+      "A unique solution",
+      "No solution",
+      "Infinitely many solutions",
+      "Exactly two solutions"
     ],
-    answer: 0
+    "answer": 2
   },
   {
-    question: "The integral of a vector-valued function is the integral of each of its component functions.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "If r′(t)=⟨cos(t),sin(t),1⟩ and r(0)=⟨1,0,0⟩, what is r(t)?",
-    options: [
-      "⟨sin(t),−cos(t),t⟩ + ⟨1,0,0⟩",
-      "⟨sin(t) + 1,−cos(t) + 1,t⟩",
-      "⟨sin(t),−cos(t),t⟩",
-      "⟨cos(t),sin(t),1⟩"
+    "question": "Gauss elimination method involves:",
+    "options": [
+      "Finding determinants",
+      "Transforming the augmented matrix to row-echelon form",
+      "Finding the inverse matrix",
+      "Using graphs"
     ],
-    answer: 0
+    "answer": 1
   },
   {
-    question: "The dot product of the velocity vector and acceleration vector is zero if the speed is constant.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "The gradient of a scalar function is a vector field.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "The divergence of a vector field measures the net outward flux per unit volume.",
-    options: ["True", "False"],
-    answer: 0
-  },
-  {
-    question: "What is the curl of F=⟨y,z,x⟩?",
-    options: [
-      "⟨−1,−1,−1⟩",
-      "⟨1,1,1⟩",
-      "⟨0,0,0⟩",
-      "⟨1,1,1⟩"
+    "question": "The augmented matrix for the system 2x + y = 3, x - y = 1 is:",
+    "options": [
+      "[2 1; 1 -1]",
+      "[2 1 3; 1 -1 1]",
+      "[2 1; 1 -1; 3 1]",
+      "[2 3; 1 1]"
     ],
-    answer: 0
+    "answer": 1
   },
   {
-    question: "Evaluate the triple integral of x over the cube 0≤x,y,z≤1.",
-    options: ["1/2", "1/4", "1", "2"],
-    answer: 0
+    "question": "The solution to the system x + y = 2, x - y = 0 is:",
+    "options": [
+      "(1, 1)",
+      "(2, 0)",
+      "(0, 2)",
+      "(1, -1)"
+    ],
+    "answer": 0
   },
   {
-    question: "The Laplace transform of a step function is non-zero.",
-    options: ["True", "False"],
-    answer: 0
+    "question": "The vector from point A(1,2) to point B(4,6) is:",
+    "options": [
+      "(3,4)",
+      "(5,8)",
+      "(4,6)",
+      "(1,2)"
+    ],
+    "answer": 0
   },
   {
-    question: "The inverse Laplace transform of F(s)=1/s is:",
-    options: ["1", "t", "eᵗ", "δ(t)"],
-    answer: 0
+    "question": "If u = (1,2) and v = (3,4), then 2u + 3v is:",
+    "options": [
+      "(11,16)",
+      "(5,6)",
+      "(4,12)",
+      "(6,8)"
+    ],
+    "answer": 0
   },
   {
-    question: "The Laplace transform of t² is 2/s³.",
-    options: ["True", "False"],
-    answer: 0
+    "question": "The magnitude of the vector (0,0) is:",
+    "options": [
+      "0",
+      "1",
+      "Undefined",
+      "Infinite"
+    ],
+    "answer": 0
   },
   {
-    question: "The Laplace transform of the solution to y′ − y = te⁻ᵗ is given by a partial fraction decomposition.",
-    options: ["True", "False"],
-    answer: 0
+    "question": "The dot product of two perpendicular vectors is:",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "Equal to the product of their magnitudes"
+    ],
+    "answer": 0
   },
   {
-    question: "The Bessel function Jₙ(x) is a series of which variable?",
-    options: ["n", "x", "t", "s"],
-    answer: 1
+    "question": "The cross product of two vectors in 2D is:",
+    "options": [
+      "A scalar",
+      "A vector",
+      "Not defined",
+      "Zero"
+    ],
+    "answer": 2
   },
   {
-    question: "The Laplace transform is an operator that transforms a function of t to a function of s.",
-    options: ["True", "False"],
-    answer: 0
+    "question": "The area of a parallelogram formed by vectors u and v is given by the magnitude of:",
+    "options": [
+      "u · v",
+      "u × v",
+      "u + v",
+      "u - v"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The vector projection of a = (3, 4) onto b = (1, 0) is:",
+    "options": [
+      "(3, 0)",
+      "(0, 4)",
+      "(3, 4)",
+      "(1, 0)"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The scalar projection (component) of a = (3, 4) onto b = (1, 0) is:",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "0"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The angle between the vectors a = (1, √3) and b = (1, 0) is:",
+    "options": [
+      "30°",
+      "45°",
+      "60°",
+      "90°"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "A matrix that is both symmetric and skew-symmetric must be:",
+    "options": [
+      "The identity matrix",
+      "A diagonal matrix",
+      "The zero matrix",
+      "A square matrix"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "The trace of the matrix A = [2 5; -1 3] is:",
+    "options": [
+      "5",
+      "1",
+      "6",
+      "8"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "For a square matrix A, if A = Aᵀ, then A is called a:",
+    "options": [
+      "Skew-symmetric matrix",
+      "Symmetric matrix",
+      "Orthogonal matrix",
+      "Diagonal matrix"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The determinant of a 3x3 identity matrix is:",
+    "options": [
+      "0",
+      "1",
+      "3",
+      "-1"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "If two rows of a square matrix are identical, then its determinant is:",
+    "options": [
+      "1",
+      "0",
+      "Positive",
+      "Negative"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The cofactor of the element a₂₂ in the matrix [1 2 3; 0 4 5; 1 0 6] is:",
+    "options": [
+      "-6",
+      "6",
+      "3",
+      "-3"
+    ],
+    "answer": 3
+  },
+  {
+    "question": "The formula for the inverse of a 2x2 matrix A = [a b; c d] is:",
+    "options": [
+      "(1/det(A)) * [d -b; -c a]",
+      "(1/det(A)) * [a c; b d]",
+      "(1/det(A)) * [d b; c a]",
+      "(1/det(A)) * [-a -b; -c -d]"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "If A is a 3x3 matrix and |A| = 5, then |2A| is:",
+    "options": [
+      "10",
+      "20",
+      "40",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "The system of equations x + 2y = 3 and 2x + 4y = 6 is:",
+    "options": [
+      "Consistent with a unique solution",
+      "Inconsistent",
+      "Consistent with infinitely many solutions",
+      "Not a linear system"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "The system of equations x + y = 1 and x + y = 2 is:",
+    "options": [
+      "Consistent with a unique solution",
+      "Inconsistent",
+      "Consistent with infinitely many solutions",
+      "Not a linear system"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "In Gauss-Jordan elimination, the final augmented matrix is reduced to:",
+    "options": [
+      "Row-echelon form",
+      "Reduced row-echelon form",
+      "Diagonal form",
+      "Symmetric form"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The number of solutions for a system of linear equations represented by an augmented matrix [1 0 | 3; 0 1 | -2] is:",
+    "options": [
+      "0",
+      "1",
+      "Infinitely many",
+      "2"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The number of solutions for a system represented by [1 2 | 3; 0 0 | 1] is:",
+    "options": [
+      "0",
+      "1",
+      "Infinitely many",
+      "2"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The number of solutions for a system represented by [1 3 | 2; 0 0 | 0] is:",
+    "options": [
+      "0",
+      "1",
+      "Infinitely many",
+      "2"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Cramer's Rule can be applied only if the coefficient matrix is:",
+    "options": [
+      "Square and singular",
+      "Square and non-singular",
+      "Rectangular",
+      "Symmetric"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The equation of a circle with center at the origin and radius 5 is:",
+    "options": [
+      "x² + y² = 5",
+      "x² + y² = 25",
+      "(x-5)² + (y-5)² = 0",
+      "x² + y² = 10"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The center and radius of the circle x² + y² - 6x + 4y - 3 = 0 are:",
+    "options": [
+      "(3, -2), r = 4",
+      "(-3, 2), r = 4",
+      "(3, -2), r = 2",
+      "(-3, 2), r = 2"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The locus of a point moving so that its distance from (2,0) is always twice its distance from (0,0) is a:",
+    "options": [
+      "Circle",
+      "Parabola",
+      "Ellipse",
+      "Hyperbola"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The focus of the parabola x² = 8y is at:",
+    "options": [
+      "(0, 2)",
+      "(2, 0)",
+      "(0, -2)",
+      "(-2, 0)"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The directrix of the parabola y² = -4x is:",
+    "options": [
+      "x = 1",
+      "x = -1",
+      "y = 1",
+      "y = -1"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The vertex of the parabola (y - 2)² = 8(x + 3) is at:",
+    "options": [
+      "(-3, 2)",
+      "(3, -2)",
+      "(2, -3)",
+      "(-2, 3)"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The length of the latus rectum of the parabola y² = 12x is:",
+    "options": [
+      "3",
+      "6",
+      "12",
+      "24"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "For an ellipse, the relationship between a, b, and c is:",
+    "options": [
+      "c² = a² + b²",
+      "a² = b² + c²",
+      "b² = a² + c²",
+      "c² = a² - b²"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The eccentricity of an ellipse is always:",
+    "options": [
+      "Equal to 1",
+      "Greater than 1",
+      "Between 0 and 1",
+      "Less than 0"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "The foci of the ellipse x²/9 + y²/4 = 1 are at:",
+    "options": [
+      "(±√5, 0)",
+      "(0, ±√5)",
+      "(±√13, 0)",
+      "(0, ±√13)"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The length of the major axis of the ellipse 16x² + 25y² = 400 is:",
+    "options": [
+      "10",
+      "16",
+      "8",
+      "20"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "For a hyperbola, the relationship between a, b, and c is:",
+    "options": [
+      "c² = a² + b²",
+      "a² = b² + c²",
+      "b² = a² + c²",
+      "c² = a² - b²"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The eccentricity of a hyperbola is always:",
+    "options": [
+      "Equal to 1",
+      "Greater than 1",
+      "Between 0 and 1",
+      "Less than 0"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The equations of the asymptotes for the hyperbola x²/16 - y²/9 = 1 are:",
+    "options": [
+      "y = ±(3/4)x",
+      "y = ±(4/3)x",
+      "y = ±(9/16)x",
+      "y = ±(16/9)x"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The vertices of the hyperbola y²/25 - x²/16 = 1 are at:",
+    "options": [
+      "(±5, 0)",
+      "(0, ±5)",
+      "(±4, 0)",
+      "(0, ±4)"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The polar equation r = 3/(1 + cosθ) represents a:",
+    "options": [
+      "Circle",
+      "Parabola",
+      "Ellipse",
+      "Hyperbola"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The polar equation r = 6/(2 + sinθ) represents a(n):",
+    "options": [
+      "Circle",
+      "Parabola",
+      "Ellipse",
+      "Hyperbola"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "The Cartesian equation y² = 4ax can be written in parametric form as:",
+    "options": [
+      "x = at², y = 2at",
+      "x = 2at, y = at²",
+      "x = a cos t, y = a sin t",
+      "x = a sec t, y = b tan t"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The parametric equations x = a cos θ, y = b sin θ represent a(n):",
+    "options": [
+      "Circle",
+      "Parabola",
+      "Ellipse",
+      "Hyperbola"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "The curve given by x = t² - 1, y = t + 2 can be described in Cartesian form by eliminating t as:",
+    "options": [
+      "y = √(x+1) + 2",
+      "x = (y-2)² - 1",
+      "y² = x + 1",
+      "x² = y - 2"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The derivative dy/dx for the parametric equations x = 2t, y = t² is:",
+    "options": [
+      "t",
+      "2t",
+      "1/t",
+      "t/2"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The second derivative d²y/dx² for the parametric equations x = cos t, y = sin t is:",
+    "options": [
+      "-sec³t",
+      "sec³t",
+      "-csc³t",
+      "csc³t"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The angle between the curves y = x² and y = x³ at their point of intersection (1,1) is given by:",
+    "options": [
+      "tan⁻¹(|(2-3)/(1+6)|)",
+      "tan⁻¹(|(3-2)/(1+6)|)",
+      "tan⁻¹(|(1-1)/(1+1)|)",
+      "90°"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The condition for the line y = mx + c to be tangent to the circle x² + y² = r² is:",
+    "options": [
+      "c² = r²(1 + m²)",
+      "c² = r²(1 - m²)",
+      "c = r√(1 + m²)",
+      "c = r√(1 - m²)"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The condition for the line y = mx + c to be tangent to the parabola y² = 4ax is:",
+    "options": [
+      "c = a/m",
+      "c = am",
+      "c = a + m",
+      "c = a - m"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The condition for the line y = mx + c to be tangent to the ellipse x²/a² + y²/b² = 1 is:",
+    "options": [
+      "c² = a²m² + b²",
+      "c² = a²m² - b²",
+      "c² = a² - b²m²",
+      "c² = b² - a²m²"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The condition for the line y = mx + c to be tangent to the hyperbola x²/a² - y²/b² = 1 is:",
+    "options": [
+      "c² = a²m² - b²",
+      "c² = a²m² + b²",
+      "c² = b² - a²m²",
+      "c² = b²m² - a²"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the tangent to the circle x² + y² = 25 at the point (3,4) is:",
+    "options": [
+      "3x + 4y = 25",
+      "4x + 3y = 25",
+      "3x - 4y = 25",
+      "4x - 3y = 25"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the normal to the parabola y² = 4ax at the point (at², 2at) is:",
+    "options": [
+      "y = tx + 2at + at³",
+      "y = -tx + 2at + at³",
+      "y = tx - 2at - at³",
+      "y = -tx - 2at - at³"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The product of the slopes of the tangents drawn from an external point to a parabola is given by:",
+    "options": [
+      "-1",
+      "1",
+      "A constant depending on the point",
+      "0"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "The chord of contact of tangents from the point (x₁, y₁) to the circle x² + y² = r² has the equation:",
+    "options": [
+      "xx₁ + yy₁ = r²",
+      "xy₁ + yx₁ = r²",
+      "xx₁ - yy₁ = r²",
+      "x₁y - y₁x = r²"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The director circle of the ellipse x²/a² + y²/b² (where a ≠ b) is:",
+    "options": [
+      "x² + y² = a² + b²",
+      "x² + y² = a² - b²",
+      "x² + y² = ab",
+      "Does not exist"
+    ],
+    "answer": 3
+  },
+  {
+    "question": "The angle between the pair of tangents drawn from the point (x₁, y₁) to the circle x² + y² = r² is given by:",
+    "options": [
+      "2 tan⁻¹(r/√(x₁²+y₁²-r²))",
+      "2 tan⁻¹(√(x₁²+y₁²-r²)/r)",
+      "tan⁻¹(r/√(x₁²+y₁²-r²))",
+      "tan⁻¹(√(x₁²+y₁²-r²)/r)"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The polar of the point (x₁, y₁) with respect to the circle x² + y² = r² is:",
+    "options": [
+      "xx₁ + yy₁ = r²",
+      "xy₁ + yx₁ = r²",
+      "xx₁ - yy₁ = r²",
+      "x₁y - y₁x = r²"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The pole of the line lx + my + n = 0 with respect to the circle x² + y² = r² is:",
+    "options": [
+      "(-r²l/n, -r²m/n)",
+      "(r²l/n, r²m/n)",
+      "(-r²n/l, -r²n/m)",
+      "(r²n/l, r²n/m)"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The condition for the circles x²+y²+2g₁x+2f₁y+c₁=0 and x²+y²+2g₂x+2f₂y+c₂=0 to cut orthogonally is:",
+    "options": [
+      "2g₁g₂ + 2f₁f₂ = c₁ + c₂",
+      "2g₁g₂ + 2f₁f₂ = c₁c₂",
+      "g₁g₂ + f₁f₂ = c₁ + c₂",
+      "2(g₁g₂ + f₁f₂) = c₁ + c₂"
+    ],
+    "answer": 3
+  },
+  {
+    "question": "The radical axis of two circles has the equation:",
+    "options": [
+      "S₁ - S₂ = 0",
+      "S₁ + S₂ = 0",
+      "S₁/S₂ = 1",
+      "S₁S₂ = 0"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The family of circles passing through the intersection of two circles S₁=0 and S₂=0 is given by:",
+    "options": [
+      "S₁ + kS₂ = 0",
+      "S₁ - kS₂ = 0",
+      "S₁ + k = 0",
+      "S₂ + k = 0"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the chord of the circle x²+y²=r² whose midpoint is (x₁,y₁) is:",
+    "options": [
+      "xx₁ + yy₁ = x₁² + y₁²",
+      "xx₁ + yy₁ = r²",
+      "xy₁ + yx₁ = r²",
+      "x² + y² = x₁² + y₁²"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The condition for the line y=mx+c to be a normal to the parabola y²=4ax is:",
+    "options": [
+      "c = -2am - am³",
+      "c = 2am + am³",
+      "c = -2am + am³",
+      "c = 2am - am³"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The number of distinct normals that can be drawn from a point to a parabola is at most:",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "The chord of the parabola y²=4ax which passes through the focus and is perpendicular to the axis is called the:",
+    "options": [
+      "Latus rectum",
+      "Directrix",
+      "Focal chord",
+      "Double ordinate"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The focal distance of any point (x,y) on the parabola y²=4ax is:",
+    "options": [
+      "x + a",
+      "x - a",
+      "a - x",
+      "√(x² + y²)"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The eccentricity of the parabola y²=4ax is:",
+    "options": [
+      "0",
+      "1",
+      "Between 0 and 1",
+      "Greater than 1"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The distance between the foci of the ellipse x²/25 + y²/16 = 1 is:",
+    "options": [
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The sum of the focal distances of any point on an ellipse is equal to:",
+    "options": [
+      "The length of the major axis",
+      "The length of the minor axis",
+      "The distance between the foci",
+      "The length of the latus rectum"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the tangent to the ellipse x²/a² + y²/b² = 1 at the point (x₁,y₁) is:",
+    "options": [
+      "xx₁/a² + yy₁/b² = 1",
+      "xx₁/a + yy₁/b = 1",
+      "x/a² + y/b² = 1",
+      "x²/a² + y²/b² = x₁²/a² + y₁²/b²"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The product of the slopes of the tangents drawn from the point (x₁,y₁) to the ellipse x²/a² + y²/b² = 1 is given by:",
+    "options": [
+      "(b² - x₁²)/(a² - y₁²)",
+      "(a² - x₁²)/(b² - y₁²)",
+      "(b²x₁² - a²)/(a²y₁² - b²)",
+      "(a²y₁² - b²)/(b²x₁² - a²)"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The director circle of the hyperbola x²/a² - y²/b² = 1 is:",
+    "options": [
+      "x² + y² = a² + b²",
+      "x² + y² = a² - b²",
+      "x² + y² = ab",
+      "Does not exist"
+    ],
+    "answer": 3
+  },
+  {
+    "question": "The asymptotes of the hyperbola x²/a² - y²/b² = 1 are:",
+    "options": [
+      "y = ±(b/a)x",
+      "y = ±(a/b)x",
+      "y = ±(a²/b²)x",
+      "y = ±(b²/a²)x"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The rectangular hyperbola is characterized by:",
+    "options": [
+      "a = b",
+      "a ≠ b",
+      "Asymptotes perpendicular to each other",
+      "Both a and c"
+    ],
+    "answer": 3
+  },
+  {
+    "question": "The eccentricity of the rectangular hyperbola x² - y² = a² is:",
+    "options": [
+      "√2",
+      "2",
+      "1",
+      "1/√2"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The parametric equations of the rectangular hyperbola xy = c² are:",
+    "options": [
+      "x = ct, y = c/t",
+      "x = c cos t, y = c sin t",
+      "x = c sec t, y = c tan t",
+      "x = c t², y = c/t²"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the tangent to the hyperbola x²/a² - y²/b² = 1 at the point (x₁,y₁) is:",
+    "options": [
+      "xx₁/a² - yy₁/b² = 1",
+      "xx₁/a - yy₁/b = 1",
+      "x/a² - y/b² = 1",
+      "x²/a² - y²/b² = x₁²/a² - y₁²/b²"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The product of the slopes of the tangents drawn from the point (x₁,y₁) to the hyperbola x²/a² - y²/b² = 1 is given by:",
+    "options": [
+      "(b² + x₁²)/(a² + y₁²)",
+      "(a² + x₁²)/(b² + y₁²)",
+      "(b²x₁² - a²)/(a²y₁² + b²)",
+      "(a²y₁² + b²)/(b²x₁² - a²)"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "The polar equation r = ed/(1 + e cosθ) represents a conic with eccentricity e. If e=1, it is a:",
+    "options": [
+      "Circle",
+      "Parabola",
+      "Ellipse",
+      "Hyperbola"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The Cartesian equation of the polar curve r = 4 sinθ is:",
+    "options": [
+      "x² + y² = 4y",
+      "x² + y² = 4x",
+      "x² + y² = 4",
+      "y = 4x"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The Cartesian equation of the polar curve r = 2/(1 - cosθ) is:",
+    "options": [
+      "y² = 4(x+1)",
+      "x² = 4(y+1)",
+      "y² = 4(x-1)",
+      "x² = 4(y-1)"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The area enclosed by the curve r = a(1 + cosθ) is a:",
+    "options": [
+      "Cardioid",
+      "Limacon",
+      "Lemniscate",
+      "Rose curve"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The curve r = a cos(3θ) is a rose curve with:",
+    "options": [
+      "3 petals",
+      "6 petals",
+      "1 petal",
+      "4 petals"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The Cartesian equation of the curve given by x = t², y = 2t is:",
+    "options": [
+      "y² = 4x",
+      "x² = 4y",
+      "y = 2x²",
+      "x = 2y²"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The derivative dy/dx for the parametric equations x = e^t, y = t e^t is:",
+    "options": [
+      "(t+1)e^t",
+      "(t+1)",
+      "e^t",
+      "t"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The second derivative d²y/dx² for the parametric equations x = cos t, y = sin t is:",
+    "options": [
+      "-sec³t",
+      "sec³t",
+      "-csc³t",
+      "csc³t"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The angle between the curves r = a(1+cosθ) and r = b(1-cosθ) at the origin is:",
+    "options": [
+      "0°",
+      "45°",
+      "90°",
+      "180°"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "The length of the latus rectum of the conic r = ed/(1+e cosθ) is:",
+    "options": [
+      "2ed",
+      "2ed/(1+e²)",
+      "2ed/(1-e²)",
+      "ed/(1+e²)"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "The area of the triangle formed by the lines y = m₁x + c₁, y = m₂x + c₂, and the y-axis is:",
+    "options": [
+      "|(c₁-c₂)²/(2(m₁-m₂))|",
+      "|(c₁-c₂)²/(m₁-m₂)|",
+      "|(c₁-c₂)/(m₁-m₂)|",
+      "|(c₁²-c₂²)/(m₁-m₂)|"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The distance between the parallel lines 3x+4y+5=0 and 3x+4y+10=0 is:",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "5"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the line through the point of intersection of lines 2x+3y-5=0 and x-y-2=0 and parallel to the x-axis is:",
+    "options": [
+      "y = 1",
+      "y = -1",
+      "x = 1",
+      "x = -1"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The condition for the lines a₁x+b₁y+c₁=0 and a₂x+b₂y+c₂=0 to be perpendicular is:",
+    "options": [
+      "a₁a₂ + b₁b₂ = 0",
+      "a₁b₂ + a₂b₁ = 0",
+      "a₁/a₂ = b₁/b₂",
+      "a₁/a₂ = -b₁/b₂"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The distance of the point (2,3) from the line 4x-3y+5=0 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "The equation of the line through (1,2) making equal intercepts on the axes is:",
+    "options": [
+      "x+y=3",
+      "x-y=1",
+      "2x+y=4",
+      "x+2y=5"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The lines represented by the equation y² - xy - 6x² = 0 are:",
+    "options": [
+      "Parallel",
+      "Perpendicular",
+      "Coincident",
+      "Inclined at 45°"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The angle between the lines represented by x² + 2xy secθ + y² = 0 is:",
+    "options": [
+      "θ",
+      "2θ",
+      "θ/2",
+      "90°-θ"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The product of the perpendiculars from (x₁,y₁) to the pair of lines ax²+2hxy+by²=0 is:",
+    "options": [
+      "|(ax₁²+2hx₁y₁+by₁²)/√((a-b)²+4h²)|",
+      "|(ax₁²+2hx₁y₁+by₁²)/√(a+b)|",
+      "|(ax₁²+2hx₁y₁+by₁²)/(a+b)|",
+      "|(ax₁²+2hx₁y₁+by₁²)/√(ab-h²)|"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The condition for the equation ax²+2hxy+by²+2gx+2fy+c=0 to represent a pair of lines is that the determinant of the matrix:",
+    "options": [
+      "[a h g; h b f; g f c] = 0",
+      "[a h; h b] = 0",
+      "[a g; g c] = 0",
+      "[b f; f c] = 0"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The point of intersection of the lines represented by x² - 3xy + 2y² = 0 is:",
+    "options": [
+      "(0,0)",
+      "(1,2)",
+      "(2,1)",
+      "(3,2)"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the pair of lines through the origin perpendicular to the lines x² - 3xy + 2y² = 0 is:",
+    "options": [
+      "2x² - 3xy + y² = 0",
+      "x² - 3xy + 2y² = 0",
+      "2x² + 3xy + y² = 0",
+      "x² + 3xy + 2y² = 0"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "The area of the triangle formed by the lines y² - 9xy + 18x² = 0 and y = 3 is:",
+    "options": [
+      "1/2",
+      "1",
+      "3/2",
+      "2"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The distance between the lines represented by x² + 2√3xy + 3y² = 0 is:",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "√3"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The equation of the line joining the origin to the point of intersection of the curves ax²+2hxy+by²+2gx=0 and a'x²+2h'xy+b'y²+2g'x=0 can be found by:",
+    "options": [
+      "Making the equation homogeneous",
+      "Using Cramer's rule",
+      "Solving the equations simultaneously",
+      "Eliminating x or y"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The joint equation of the lines through (1,1) and parallel to the lines x² - 5xy + 6y² = 0 is:",
+    "options": [
+      "x² - 5xy + 6y² - 3x + 3y = 0",
+      "x² - 5xy + 6y² + 3x - 3y = 0",
+      "x² - 5xy + 6y² - 3x - 3y = 0",
+      "x² - 5xy + 6y² + 3x + 3y = 0"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The angle between the lines joining the origin to the points of intersection of the curve x²+2xy+y²+2x+2y-5=0 and the line x-y+1=0 is:",
+    "options": [
+      "0°",
+      "45°",
+      "90°",
+      "60°"
+    ],
+    "answer": 2
   }
+
 ];
+  // KaTeX rendering function
+  function renderLatex(str) {
+    if (!str) return str;
 
-
-
-    // KaTeX rendering function
-    function renderLatex(str) {
-      if (!str) return str;
-      
-      // Render LaTeX between $...$
-      return str.replace(/\$(.*?)\$/g, (match, latex) => {
-        try {
-          return katex.renderToString(latex, {
-            throwOnError: false,
-            displayMode: false
-          });
-        } catch (e) {
-          console.error("KaTeX error:", e);
-          return match;
-        }
-      });
-    }
-
-    // UI Elements
-    const questionNav = document.getElementById('question-nav');
-    const startScreen = document.getElementById('start-screen');
-    const startQuizBtn = document.getElementById('start-quiz-btn');
-    const quizContainer = document.getElementById('quiz-container');
-    const resultContainer = document.getElementById('result-container');
-    const app = document.getElementById('app');
-    const timerEl = document.getElementById('timer');
-    const questionNumberEl = document.getElementById('question-number');
-    const questionTextEl = document.getElementById('question-text');
-    const optionsContainer = document.getElementById('options-container');
-    const prevBtn = document.getElementById('prev-btn');
-    const nextBtn = document.getElementById('next-btn');
-    const submitBtn = document.getElementById('submit-btn');
-    const scoreEl = document.getElementById('score');
-    const resultsList = document.getElementById('results-list');
-    const retryBtn = document.getElementById('retry-btn');
-    const customConfirm = document.getElementById('customConfirm');
-    const confirmYes = document.getElementById('confirmYes');
-    const confirmNo = document.getElementById('confirmNo');
-    const darkModeToggle = document.getElementById('dark-mode-toggle');
-
-    // Quiz variables
-    const TOTAL_QUESTIONS = 45;
-    const TIME_LIMIT = 45 * 60; // in seconds
-    let selectedQuestions = [];
-    let currentQuestionIndex = 0;
-    let userAnswers = [];
-    let timer;
-    let timeRemaining = TIME_LIMIT;
-
-    // Initialize quiz
-    startQuizBtn.addEventListener('click', () => {
-      startScreen.style.display = 'none';
-      app.style.display = 'flex';
-      initQuiz();
-    });
-
-    function initQuiz() {
-      // Shuffle and pick questions
-      const shuffled = shuffleArray([...questions]);
-      selectedQuestions = shuffled.slice(0, Math.min(TOTAL_QUESTIONS, questions.length));
-
-      currentQuestionIndex = 0;
-      userAnswers = new Array(selectedQuestions.length).fill(null);
-
-      timeRemaining = TIME_LIMIT;
-      updateTimerDisplay();
-
-      showQuestion();
-
-      prevBtn.disabled = true;
-      nextBtn.disabled = false;
-      submitBtn.disabled = true;
-
-      quizContainer.style.display = 'flex';
-      resultContainer.style.display = 'none';
-
-      startTimer();
-    }
-
-    function shuffleArray(array) {
-      for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
+    // Render LaTeX between $...$
+    return str.replace(/\$(.*?)\$/g, (match, latex) => {
+      try {
+        return katex.renderToString(latex, {
+          throwOnError: false,
+          displayMode: false
+        });
+      } catch (e) {
+        console.error("KaTeX error:", e);
+        return match;
       }
-      return array;
-    }
+    });
+  }
 
-    function startTimer() {
+  // KaTeX rendering function - IMPROVED
+function renderLatex(str) {
+  if (!str || typeof str !== 'string') return str;
+  
+  // Handle both inline $...$ and display $$...$$ math
+  let result = str;
+  
+  // Render display math ($$...$$)
+  result = result.replace(/\$\$(.*?)\$\$/g, (match, latex) => {
+    try {
+      return katex.renderToString(latex, {
+        throwOnError: false,
+        displayMode: true
+      });
+    } catch (e) {
+      console.error("KaTeX display mode error:", e);
+      return match;
+    }
+  });
+  
+  // Render inline math ($...$)
+  result = result.replace(/\$(.*?)\$/g, (match, latex) => {
+    try {
+      return katex.renderToString(latex, {
+        throwOnError: false,
+        displayMode: false
+      });
+    } catch (e) {
+      console.error("KaTeX inline mode error:", e);
+      return match;
+    }
+  });
+  
+  return result;
+}
+
+// Function to render all math expressions in an element
+function renderMathInElement(element) {
+  if (!element) return;
+  
+  // Find all text nodes that contain LaTeX
+  const walker = document.createTreeWalker(
+    element, 
+    NodeFilter.SHOW_TEXT, 
+    null, 
+    false
+  );
+  
+  let nodes = [];
+  let node;
+  while (node = walker.nextNode()) {
+    if (node.textContent.includes('$')) {
+      nodes.push(node);
+    }
+  }
+  
+  // Process each node with LaTeX
+  nodes.forEach(node => {
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = renderLatex(node.textContent);
+    
+    // Replace the text node with the rendered HTML
+    if (tempDiv.innerHTML !== node.textContent) {
+      node.parentNode.replaceChild(tempDiv, node);
+    }
+  });
+}
+
+// UI Elements
+const questionNav = document.getElementById('question-nav');
+const startScreen = document.getElementById('start-screen');
+const startQuizBtn = document.getElementById('start-quiz-btn');
+const quizContainer = document.getElementById('quiz-container');
+const resultContainer = document.getElementById('result-container');
+const app = document.getElementById('app');
+const timerEl = document.getElementById('timer');
+const questionNumberEl = document.getElementById('question-number');
+const questionTextEl = document.getElementById('question-text');
+const optionsContainer = document.getElementById('options-container');
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
+const submitBtn = document.getElementById('submit-btn');
+const scoreEl = document.getElementById('score');
+const resultsList = document.getElementById('results-list');
+const retryBtn = document.getElementById('retry-btn');
+const customConfirm = document.getElementById('customConfirm');
+const confirmYes = document.getElementById('confirmYes');
+const confirmNo = document.getElementById('confirmNo');
+const reloadConfirm = document.getElementById('reload-confirm');
+const reloadSubmit = document.getElementById('reload-submit');
+const reloadCancel = document.getElementById('reload-cancel');
+
+// Question count elements
+const questionCountInput = document.getElementById('question-count');
+const countSlider = document.getElementById('count-slider');
+const decreaseBtn = document.getElementById('decrease-btn');
+const increaseBtn = document.getElementById('increase-btn');
+const countDisplay = document.getElementById('count-display');
+const timeEstimate = document.getElementById('time-estimate');
+
+// Quiz variables
+let TOTAL_QUESTIONS = 10; // Default value
+let timeRemaining; // Will be set dynamically based on question count
+let selectedQuestions = [];
+let currentQuestionIndex = 0;
+let userAnswers = [];
+let timer;
+let quizInProgress = false;
+
+// Update question count display
+function updateCountDisplay() {
+  countDisplay.textContent = `${TOTAL_QUESTIONS} questions`;
+  questionCountInput.value = TOTAL_QUESTIONS;
+  countSlider.value = TOTAL_QUESTIONS;
+  // Show estimated time as 45 seconds per question
+  const totalSeconds = TOTAL_QUESTIONS * 45;
+  const min = Math.floor(totalSeconds / 60);
+  const sec = totalSeconds % 60;
+  let timeStr = '';
+  if (min > 0) {
+    timeStr += `${min} minute${min !== 1 ? 's' : ''}`;
+    if (sec > 0) timeStr += ` ${sec} second${sec !== 1 ? 's' : ''}`;
+  } else {
+    timeStr = `${sec} second${sec !== 1 ? 's' : ''}`;
+  }
+  timeEstimate.textContent = `Estimated time: ${timeStr} (${TOTAL_QUESTIONS} × 45 sec)`;
+}   
+
+// Initialize question count controls
+decreaseBtn.addEventListener('click', () => {
+  if (TOTAL_QUESTIONS > 10) {
+    TOTAL_QUESTIONS = Math.max(10, TOTAL_QUESTIONS - 5);
+    updateCountDisplay();
+  }
+});
+
+increaseBtn.addEventListener('click', () => {
+  if (TOTAL_QUESTIONS < 100) {
+    TOTAL_QUESTIONS = Math.min(100, TOTAL_QUESTIONS + 5);
+    updateCountDisplay();
+  }
+});
+
+questionCountInput.addEventListener('change', () => {
+  let value = parseInt(questionCountInput.value);
+  if (isNaN(value) || value < 10) value = 10;
+  if (value > 100) value = 100;
+  TOTAL_QUESTIONS = value;
+  updateCountDisplay();
+});
+
+countSlider.addEventListener('input', () => {
+  TOTAL_QUESTIONS = parseInt(countSlider.value);
+  updateCountDisplay();
+});
+
+// Initialize quiz
+startQuizBtn.addEventListener('click', () => {
+  startScreen.style.display = 'none';
+  app.style.display = 'flex';
+  initQuiz();
+});
+
+function initQuiz() {
+  // Set time limit based on number of questions (45s per question)
+  timeRemaining = TOTAL_QUESTIONS * 45;
+  updateTimerDisplay();
+
+  // Shuffle and pick questions
+  const shuffled = shuffleArray([...questions]);
+  selectedQuestions = shuffled.slice(0, Math.min(TOTAL_QUESTIONS, questions.length));
+
+  currentQuestionIndex = 0;
+  userAnswers = new Array(selectedQuestions.length).fill(null);
+
+  showQuestion();
+
+  prevBtn.disabled = true;
+  nextBtn.disabled = false;
+  submitBtn.disabled = true;
+
+  quizContainer.style.display = 'flex';
+  resultContainer.style.display = 'none';
+
+  startTimer();
+  
+  quizInProgress = true;
+  window.addEventListener('beforeunload', handleBeforeUnload);
+  
+  // Focus on the quiz container for keyboard events
+  document.body.focus();
+}
+
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
+function startTimer() {
+  clearInterval(timer);
+  timer = setInterval(() => {
+    timeRemaining--;
+    updateTimerDisplay();
+    if (timeRemaining <= 0) {
       clearInterval(timer);
-      timer = setInterval(() => {
-        timeRemaining--;
-        updateTimerDisplay();
-        if (timeRemaining <= 0) {
-          clearInterval(timer);
-          finishQuiz();
-        }
-      }, 1000);
-    }
-
-    function updateTimerDisplay() {
-      let min = Math.floor(timeRemaining / 60);
-      let sec = timeRemaining % 60;
-      timerEl.textContent = `Time Left: ${min.toString().padStart(2,'0')}:${sec.toString().padStart(2,'0')}`;
-      
-      // Change color when time is running low
-      if (timeRemaining < 300) { // 5 minutes
-        timerEl.style.color = '#e74c3c';
-      } else {
-        timerEl.style.color = '';
-      }
-    }
-
-    function renderQuestionNav() {
-      questionNav.innerHTML = '';
-      selectedQuestions.forEach((_, i) => {
-        const btn = document.createElement('button');
-        btn.textContent = i + 1;
-        if (userAnswers[i] !== null) btn.classList.add('answered');
-        if (i === currentQuestionIndex) btn.classList.add('current');
-        btn.addEventListener('click', () => {
-          currentQuestionIndex = i;
-          showQuestion();
-          renderQuestionNav();
-        });
-        questionNav.appendChild(btn);
-      });
-    }
-
-    function showQuestion() {
-      const q = selectedQuestions[currentQuestionIndex];
-      questionNumberEl.textContent = `Question ${currentQuestionIndex + 1} of ${selectedQuestions.length}`;
-      
-      // Render LaTeX in question
-      questionTextEl.innerHTML = renderLatex(q.question);
-
-      optionsContainer.innerHTML = '';
-
-      q.options.forEach((optionText, i) => {
-        const optionDiv = document.createElement('div');
-        optionDiv.className = 'option';
-        
-        // Create span for option text and render LaTeX
-        const textSpan = document.createElement('span');
-        textSpan.innerHTML = renderLatex(String.fromCharCode(65 + i) + ". " + optionText);
-        optionDiv.appendChild(textSpan);
-        
-        // Add keyboard shortcut badge
-        const keyBadge = document.createElement('div');
-        keyBadge.className = 'key-badge';
-        keyBadge.textContent = String.fromCharCode(65 + i);
-        optionDiv.appendChild(keyBadge);
-
-        if(userAnswers[currentQuestionIndex] === i) {
-          optionDiv.classList.add('selected');
-        }
-
-        optionDiv.addEventListener('click', () => {
-          selectOption(i);
-        });
-
-        optionsContainer.appendChild(optionDiv);
-      });
-
-      prevBtn.disabled = currentQuestionIndex === 0;
-      nextBtn.disabled = currentQuestionIndex === selectedQuestions.length - 1;
-      submitBtn.disabled = userAnswers.includes(null);
-
-      renderQuestionNav();
-    }
-
-    function selectOption(optionIndex) {
-      userAnswers[currentQuestionIndex] = optionIndex;
-      
-      Array.from(optionsContainer.children).forEach((optEl, idx) => {
-        optEl.classList.toggle('selected', idx === optionIndex);
-      });
-
-      submitBtn.disabled = userAnswers.includes(null);
-      renderQuestionNav();
-    }
-
-    // Navigation buttons
-    prevBtn.addEventListener('click', () => {
-      if(currentQuestionIndex > 0) {
-        currentQuestionIndex--;
-        showQuestion();
-      }
-    });
-
-    nextBtn.addEventListener('click', () => {
-      if(currentQuestionIndex < selectedQuestions.length - 1) {
-        currentQuestionIndex++;
-        showQuestion();
-      }
-    });
-
-    // Submit button shows custom confirmation dialog
-    submitBtn.addEventListener('click', () => {
-      customConfirm.style.display = 'flex';
-    });
-
-    // Confirm dialog buttons
-    confirmYes.addEventListener('click', () => {
-      customConfirm.style.display = 'none';
       finishQuiz();
+    }
+  }, 1000);
+}
+
+function updateTimerDisplay() {
+  let min = Math.floor(timeRemaining / 60);
+  let sec = timeRemaining % 60;
+  timerEl.textContent = `Time Left: ${min.toString().padStart(2,'0')}:${sec.toString().padStart(2,'0')}`;
+}
+
+function renderQuestionNav() {
+  questionNav.innerHTML = '';
+  selectedQuestions.forEach((_, i) => {
+    const btn = document.createElement('button');
+    btn.textContent = i + 1;
+    if (userAnswers[i] !== null) btn.classList.add('answered');
+    if (i === currentQuestionIndex) btn.classList.add('current');
+    btn.addEventListener('click', () => {
+      currentQuestionIndex = i;
+      showQuestion();
+      renderQuestionNav();
     });
+    questionNav.appendChild(btn);
+  });
+}
 
-    confirmNo.addEventListener('click', () => {
-      customConfirm.style.display = 'none';
-    });
+function showQuestion() {
+  const q = selectedQuestions[currentQuestionIndex];
+  questionNumberEl.textContent = `Question ${currentQuestionIndex + 1} of ${selectedQuestions.length}`;
+  
+  // Set question text and render LaTeX
+  questionTextEl.innerHTML = q.question;
+  renderMathInElement(questionTextEl);
 
-    function finishQuiz() {
-      clearInterval(timer);
-      quizContainer.style.display = 'none';
-      resultContainer.style.display = 'flex';
+  optionsContainer.innerHTML = '';
 
-      let correctCount = 0;
-      resultsList.innerHTML = '';
+  q.options.forEach((optionText, i) => {
+    const optionDiv = document.createElement('div');
+    optionDiv.className = 'option';
+    
+    const textSpan = document.createElement('span');
+    textSpan.innerHTML = String.fromCharCode(65 + i) + ". " + optionText;
+    optionDiv.appendChild(textSpan);
+    
+    // Render LaTeX in the option
+    renderMathInElement(textSpan);
+    
+    const keyBadge = document.createElement('div');
+    keyBadge.className = 'key-badge';
+    keyBadge.textContent = String.fromCharCode(65 + i);
+    optionDiv.appendChild(keyBadge);
 
-      selectedQuestions.forEach((q, idx) => {
-        const userAnsIndex = userAnswers[idx];
-        const isCorrect = userAnsIndex === q.answer;
-        if (isCorrect) correctCount++;
-
-        const userAnswerText = userAnsIndex !== null ? q.options[userAnsIndex] : 'No Answer';
-        const correctAnswerText = q.options[q.answer];
-
-        const div = document.createElement('div');
-        div.className = 'result-question';
-        div.innerHTML = `
-          <div><strong>Q${idx + 1}:</strong> ${renderLatex(q.question)}</div>
-          <div>Your answer: <span class="${isCorrect ? 'correct' : 'wrong'}">${renderLatex(userAnswerText)}</span></div>
-          ${isCorrect ? '' : `<div>Correct answer: <span class="correct">${renderLatex(correctAnswerText)}</span></div>`}
-        `;
-        resultsList.appendChild(div);
-      });
-
-      scoreEl.textContent = `You answered ${correctCount} out of ${selectedQuestions.length} questions correctly.`;
-      
-      // Add performance comment
-      let comment = "";
-      const percentage = Math.round((correctCount / selectedQuestions.length) * 100);
-      
-      if (percentage >= 80) comment = "Excellent work! You have a strong grasp of this material.";
-      else if (percentage >= 60) comment = "Good effort! Review the incorrect answers to improve.";
-      else comment = "Keep studying! Focus on the topics you missed.";
-      
-      scoreEl.innerHTML += `<div style="margin-top:10px;font-weight:normal">${comment}</div>`;
+    if(userAnswers[currentQuestionIndex] === i) {
+      optionDiv.classList.add('selected');
     }
 
-    retryBtn.addEventListener('click', () => {
-      initQuiz();
+    optionDiv.addEventListener('click', () => {
+      selectOption(i);
     });
 
-    // Dark Mode Toggle
-    darkModeToggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      darkModeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
-    });
+    optionsContainer.appendChild(optionDiv);
+  });
 
-    // Keyboard shortcuts
-    document.addEventListener('keydown', function(e) {
-      // Ignore if focus is on input elements
-      if (['INPUT', 'TEXTAREA', 'BUTTON'].includes(document.activeElement.tagName)) {
-        return;
+  prevBtn.disabled = currentQuestionIndex === 0;
+  nextBtn.disabled = currentQuestionIndex === selectedQuestions.length - 1;
+  submitBtn.disabled = userAnswers[currentQuestionIndex] === null;
+
+  renderQuestionNav();
+}
+
+function selectOption(optionIndex) {
+  userAnswers[currentQuestionIndex] = optionIndex;
+  
+  Array.from(optionsContainer.children).forEach((optEl, idx) => {
+    optEl.classList.toggle('selected', idx === optionIndex);
+  });
+
+  submitBtn.disabled = false;
+  renderQuestionNav();
+}
+
+// Navigation buttons
+prevBtn.addEventListener('click', () => {
+  if(currentQuestionIndex > 0) {
+    currentQuestionIndex--;
+    showQuestion();
+  }
+});
+
+nextBtn.addEventListener('click', () => {
+  if(currentQuestionIndex < selectedQuestions.length - 1) {
+    currentQuestionIndex++;
+    showQuestion();
+  }
+});
+
+// Submit button shows custom confirmation dialog
+submitBtn.addEventListener('click', () => {
+  customConfirm.style.display = 'flex';
+});
+
+// Confirm dialog buttons
+confirmYes.addEventListener('click', () => {
+  customConfirm.style.display = 'none';
+  finishQuiz();
+});
+
+confirmNo.addEventListener('click', () => {
+  customConfirm.style.display = 'none';
+});
+
+// Reload confirmation handlers
+function handleBeforeUnload(e) {
+  if (quizInProgress) {
+    e.preventDefault();
+    e.returnValue = '';
+    reloadConfirm.style.display = 'flex';
+    return '';
+  }
+}
+
+reloadSubmit.addEventListener('click', () => {
+  reloadConfirm.style.display = 'none';
+  quizInProgress = false;
+  window.removeEventListener('beforeunload', handleBeforeUnload);
+  finishQuiz();
+  setTimeout(() => {
+    window.location.reload();
+  }, 1000);
+});
+
+reloadCancel.addEventListener('click', () => {
+  reloadConfirm.style.display = 'none';
+});
+
+function finishQuiz() {
+  clearInterval(timer);
+  quizContainer.style.display = 'none';
+  resultContainer.style.display = 'flex';
+  
+  quizInProgress = false;
+  window.removeEventListener('beforeunload', handleBeforeUnload);
+
+  let correctCount = 0;
+  resultsList.innerHTML = '';
+
+  selectedQuestions.forEach((q, idx) => {
+    const userAnsIndex = userAnswers[idx];
+    const isCorrect = userAnsIndex === q.answer;
+    if (isCorrect) correctCount++;
+
+    const userAnswerText = userAnsIndex !== null ? q.options[userAnsIndex] : 'No Answer';
+    const correctAnswerText = q.options[q.answer];
+
+    const div = document.createElement('div');
+    div.className = 'result-question';
+    
+    const questionDiv = document.createElement('div');
+    questionDiv.innerHTML = `<strong>Q${idx + 1}:</strong> ${q.question}`;
+    renderMathInElement(questionDiv);
+    
+    const userAnswerDiv = document.createElement('div');
+    userAnswerDiv.innerHTML = `Your answer: <span class="${isCorrect ? 'correct' : 'wrong'}">${userAnswerText}</span>`;
+    renderMathInElement(userAnswerDiv);
+    
+    div.appendChild(questionDiv);
+    div.appendChild(userAnswerDiv);
+    
+    if (!isCorrect) {
+      const correctAnswerDiv = document.createElement('div');
+      correctAnswerDiv.innerHTML = `Correct answer: <span class="correct">${correctAnswerText}</span>`;
+      renderMathInElement(correctAnswerDiv);
+      div.appendChild(correctAnswerDiv);
+    }
+    
+    resultsList.appendChild(div);
+  });
+
+  scoreEl.textContent = `You answered ${correctCount} out of ${selectedQuestions.length} questions correctly.`;
+  
+  let comment = "";
+  const percentage = Math.round((correctCount / selectedQuestions.length) * 100);
+  
+  if (percentage >= 80) comment = "Excellent work! You have a strong grasp of this material.";
+  else if (percentage >= 60) comment = "Good effort! Review the incorrect answers to improve.";
+  else comment = "Keep studying! Focus on the topics you missed.";
+  
+  scoreEl.innerHTML += `<div style="margin-top:10px;font-weight:normal">${comment}</div>`;
+}
+
+retryBtn.addEventListener('click', () => {
+  initQuiz();
+});
+
+// Toggle mobile menu
+document.querySelector('.menu-toggle').addEventListener('click', function () {
+  document.querySelector('.nav-links').classList.toggle('show');
+});
+
+// Initialize count display when page loads
+updateCountDisplay();
+
+// Keyboard shortcuts - FIXED
+document.addEventListener('keydown', function(e) {
+  // Don't process keyboard shortcuts if user is typing in an input
+  if (['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) return;
+  
+  const key = e.key.toUpperCase();
+  
+  // Handle keyboard shortcuts based on what's visible on screen
+  if (startScreen.style.display !== 'none') {
+    // Start screen is visible
+    if (key === 'ENTER') {
+      e.preventDefault();
+      startQuizBtn.click();
+    }
+    return;
+  }
+  
+  if (customConfirm.style.display === 'flex') {
+    // Custom confirmation dialog is visible
+    if (key === 'Y' || key === 'ENTER') {
+      e.preventDefault();
+      confirmYes.click();
+    } else if (key === 'N' || key === 'ESCAPE') {
+      e.preventDefault();
+      confirmNo.click();
+    }
+    return;
+  }
+  
+  if (reloadConfirm.style.display === 'flex') {
+    // Reload confirmation dialog is visible
+    if (key === 'ENTER') {
+      e.preventDefault();
+      reloadSubmit.click();
+    } else if (key === 'ESCAPE') {
+      e.preventDefault();
+      reloadCancel.click();
+    }
+    return;
+  }
+  
+  if (resultContainer.style.display === 'flex') {
+    // Results screen is visible
+    if (key === 'ENTER' || key === 'R') {
+      e.preventDefault();
+      retryBtn.click();
+    }
+    return;
+  }
+  
+  if (quizContainer.style.display === 'flex' && quizInProgress) {
+    // Quiz is in progress
+    // Option selection (A–E)
+    if (key >= 'A' && key <= 'E') {
+      const optionIndex = key.charCodeAt(0) - 65;
+      const currentOptions = selectedQuestions[currentQuestionIndex]?.options || [];
+      if (optionIndex < currentOptions.length) {
+        e.preventDefault();
+        selectOption(optionIndex);
       }
-      
-      const key = e.key.toUpperCase();
-      
-      // Option selection
-      if (key >= 'A' && key <= 'E') {
-        const optionIndex = key.charCodeAt(0) - 65;
-        const currentOptions = selectedQuestions[currentQuestionIndex]?.options || [];
-        
-        if (optionIndex < currentOptions.length) {
-          selectOption(optionIndex);
-        }
-      }
-      
-      // Navigation
-      switch(key) {
-        case 'P':
-          if (!prevBtn.disabled) prevBtn.click();
-          break;
-        case 'N':
-          if (!nextBtn.disabled) nextBtn.click();
-          break;
-        case 'S':
-          if (!submitBtn.disabled) submitBtn.click();
-          break;
-      }
-    });
+      return;
+    }
+
+    // Navigation
+    switch (key) {
+      case 'P':
+        e.preventDefault();
+        if (!prevBtn.disabled) prevBtn.click();
+        break;
+      case 'N':
+        e.preventDefault();
+        if (!nextBtn.disabled) nextBtn.click();
+        break;
+      case 'S':
+        e.preventDefault();
+        if (!submitBtn.disabled) submitBtn.click();
+        break;
+    }
+  }
+});
+
+
+// Add CSS for better math formula display
+const style = document.createElement('style');
+style.textContent = `
+  .katex {
+    font-size: 1.1em !important;
+  }
+  .katex-display {
+    margin: 0.5em 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .katex-display > .katex {
+    display: inline-block;
+    white-space: nowrap;
+  }
+  .option .katex {
+    font-size: 1em !important;
+  }
+`;
+document.head.appendChild(style);
+
+// Initialize KaTeX when page loads
+document.addEventListener('DOMContentLoaded', function() {
+  // Render any math on the start screen
+  renderMathInElement(startScreen);
+});
+
+// Overlay handling
+document.addEventListener("DOMContentLoaded", () => {
+  const overlay = document.createElement("div");
+  overlay.id = "overlay";
+  overlay.innerHTML = `<div>MTH222 Questions Updated more coming </div>`;
+  document.body.appendChild(overlay);
+
+  setTimeout(() => {
+    overlay.classList.add("hidden");
+    setTimeout(() => overlay.remove(), 600); // wait for fade-out then remove
+  }, 3000); // 3 seconds
+});
